@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: bagy-integration
+    env: node
+    plan: free
+    buildCommand: cd erp_polling && npm install
+    startCommand: node src/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BAGY_API_TOKEN
+        value: your_token_aqui  # Substitua com o token real
