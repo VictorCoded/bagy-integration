@@ -1,0 +1,472 @@
+Categorias
+Tiago Assis
+Tiago Assis
+Atualizado há 1 ano
+Ainda não seguido por ninguém
+# Criar Categoria
+POST https://api.dooca.store/categories
+
+ 
+
+Body
+{
+    "external_id": "",
+    "parent_id": "206",
+    "name": "teste",
+    "description": "",
+    "banner": "",
+    "image": "",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "google_taxonomy_id": "",
+    "position": "",
+    "is_visable": "",
+    "active": true
+}
+ 
+
+Status: 201
+ 
+
+# Editar Categoria
+PUT https://api.dooca.store/categories/:id
+
+Parâmetro: O ID da categoria.
+
+A edição do registro pode ser parcial ou total.
+
+ 
+
+{
+  "name": "Novo nome Categoria",
+  "active": 0
+}
+ 
+
+Status: 200
+ 
+
+# Deletar Categoria
+DELETE https://api.dooca.store/categories/:id
+
+Parâmetro: O ID da categoria.
+
+ 
+
+Response: 204
+ 
+
+# Consultar Categoria
+GET https://api.dooca.store/categories/:id
+
+Parâmetro: O ID da categoria.
+
+ 
+
+HTTP STATUS: 200 OK
+{
+            "id": 34,
+            "parent_id": 32,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "string2",
+            "slug": "string2",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 2,
+            "breadcrumb": "string > string2",
+            "google_taxonomy_id": 772,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/string2",
+            "active": true,
+            "created_at": "2020-03-12 15:17:45",
+            "updated_at": "2020-03-12 15:17:45"
+}
+ 
+
+# Listar Categorias
+GET https://api.dooca.store/categories
+
+ 
+
+HTTP STATUS: 200 OK
+[
+        {
+            "id": 1,
+            "parent_id": null,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "Tenis",
+            "slug": "tenis-1",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 1,
+            "breadcrumb": "Tenis",
+            "google_taxonomy_id": 5710,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/tenis-1",
+            "active": true,
+            "created_at": "2020-01-29 11:54:27",
+            "updated_at": "2020-01-29 11:54:27"
+        },
+        {
+            "id": 2,
+            "parent_id": null,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "eletronico",
+            "slug": "eletronico",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 1,
+            "breadcrumb": "eletronico",
+            "google_taxonomy_id": null,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/eletronico",
+            "active": true,
+            "created_at": "2020-02-12 14:11:54",
+            "updated_at": "2020-02-12 14:11:54"
+        },
+        {
+            "id": 32,
+            "parent_id": null,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "string",
+            "slug": "string",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 1,
+            "breadcrumb": "string",
+            "google_taxonomy_id": null,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/string",
+            "active": true,
+            "created_at": "2020-03-09 16:06:30",
+            "updated_at": "2020-03-09 16:06:30"
+        },
+        {
+            "id": 33,
+            "parent_id": null,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "proteina",
+            "slug": "proteina",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 1,
+            "breadcrumb": "proteina",
+            "google_taxonomy_id": null,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/proteina",
+            "active": true,
+            "created_at": "2020-03-10 15:17:07",
+            "updated_at": "2020-03-13 14:13:51"
+        },
+        {
+            "id": 34,
+            "parent_id": 32,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "string2",
+            "slug": "string2",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 2,
+            "breadcrumb": "string > string2",
+            "google_taxonomy_id": 772,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/string2",
+            "active": true,
+            "created_at": "2020-03-12 15:17:45",
+            "updated_at": "2020-03-12 15:17:45"
+        },
+        {
+            "id": 56,
+            "parent_id": null,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "carro",
+            "slug": "carro",
+            "description": "flex",
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 1,
+            "breadcrumb": "carro",
+            "google_taxonomy_id": null,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/carro",
+            "active": true,
+            "created_at": "2020-03-13 15:04:21",
+            "updated_at": "2020-03-13 15:04:21"
+        },
+        {
+            "id": 57,
+            "parent_id": null,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "carros",
+            "slug": "carros",
+            "description": "alcool",
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 1,
+            "breadcrumb": "carros",
+            "google_taxonomy_id": null,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/carros",
+            "active": true,
+            "created_at": "2020-03-13 15:04:21",
+            "updated_at": "2020-03-13 15:04:21"
+        },
+        {
+            "id": 58,
+            "parent_id": 34,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "string 3",
+            "slug": "string-3",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 3,
+            "breadcrumb": "string > string2 > string 3",
+            "google_taxonomy_id": null,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/string-3",
+            "active": true,
+            "created_at": "2020-03-18 09:46:18",
+            "updated_at": "2020-03-18 09:46:18"
+        },
+        {
+            "id": 59,
+            "parent_id": 34,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "teste da eccosys",
+            "slug": "teste-da-eccosys",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 3,
+            "breadcrumb": "string > string2 > teste da eccosys",
+            "google_taxonomy_id": null,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/teste-da-eccosys",
+            "active": true,
+            "created_at": "2020-03-19 14:06:21",
+            "updated_at": "2020-03-19 14:06:21"
+        }
+    ],
+    "links": {
+        "first": "http://api.dooca.local/categories?page=1",
+        "last": "http://api.dooca.local/categories?page=1",
+        "prev": null,
+        "next": null
+    },
+        "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "path": "http://api.dooca.local/categories",
+        "per_page": 25,
+        "to": 9,
+        "total": 9
+    }
+ 
+
+# Consultar Breadcrumb
+GET https://api.dooca.store/categories/:category_id/breadcrumb
+
+Parâmetro: O ID da Categoria.
+
+ 
+
+# Editar Árvore de Categorias
+PUT https://api.dooca.store/categories/tree
+
+A edição do registro pode ser parcial ou total
+
+ 
+
+{
+        "id": 120,
+        "external_id": 120,
+        "parent_id": null,
+        "name": "FERRAMENTAS",
+        "slug": "ferramentas",
+        "description": null,
+        "banner": null,
+        "image": null,
+        "position": null,
+        "depth": 1,
+        "breadcrumb": "FERRAMENTAS",
+        "google_taxonomy_id": null,
+        "meta_title": null,
+        "meta_keywords": null,
+        "meta_description": null,
+        "active": true,
+        "created_at": "2019-06-17 13:41:35",
+        "updated_at": "2019-06-17 13:41:35",
+        "children": [
+            {
+                "id": 121,
+                "external_id": 121,
+                "parent_id": 120,
+                "name": "TRANSBIKE / RACK",
+                "slug": "transbike-rack",
+                "description": null,
+                "banner": null,
+                "image": null,
+                "position": null,
+                "depth": "2",
+                "breadcrumb": "FERRAMENTAS > TRANSBIKE / RACK",
+                "google_taxonomy_id": null,
+                "meta_title": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "active": true,
+                "created_at": "2019-06-17 13:41:36",
+                "updated_at": "2019-06-17 13:41:36",
+                "children": []
+            },
+            {
+                "id": 128,
+                "external_id": 128,
+                "parent_id": 120,
+                "name": "LUBRIFICANTE",
+                "slug": "lubrificante",
+                "description": null,
+                "banner": null,
+                "image": null,
+                "position": null,
+                "depth": "2",
+                "breadcrumb": "FERRAMENTAS > LUBRIFICANTE",
+                "google_taxonomy_id": null,
+                "meta_title": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "active": true,
+                "created_at": "2019-06-17 13:41:44",
+                "updated_at": "2019-06-17 13:41:44",
+                "children": []
+            }]
+}
+ 
+
+# Listar Árvores de Categorias
+GET https://api.dooca.store/categories/tree
+
+ 
+
+HTTP STATUS: 200 OK
+{
+        "id": 120,
+        "external_id": 120,
+        "parent_id": null,
+        "name": "FERRAMENTAS",
+        "slug": "ferramentas",
+        "description": null,
+        "banner": null,
+        "image": null,
+        "position": null,
+        "depth": 1,
+        "breadcrumb": "FERRAMENTAS",
+        "google_taxonomy_id": null,
+        "meta_title": null,
+        "meta_keywords": null,
+        "meta_description": null,
+        "active": true,
+        "created_at": "2019-06-17 13:41:35",
+        "updated_at": "2019-06-17 13:41:35",
+        "children": [
+            {
+                "id": 121,
+                "external_id": 121,
+                "parent_id": 120,
+                "name": "TRANSBIKE / RACK",
+                "slug": "transbike-rack",
+                "description": null,
+                "banner": null,
+                "image": null,
+                "position": null,
+                "depth": "2",
+                "breadcrumb": "FERRAMENTAS > TRANSBIKE / RACK",
+                "google_taxonomy_id": null,
+                "meta_title": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "active": true,
+                "created_at": "2019-06-17 13:41:36",
+                "updated_at": "2019-06-17 13:41:36",
+                "children": []
+            },
+            {
+                "id": 128,
+                "external_id": 128,
+                "parent_id": 120,
+                "name": "LUBRIFICANTE",
+                "slug": "lubrificante",
+                "description": null,
+                "banner": null,
+                "image": null,
+                "position": null,
+                "depth": "2",
+                "breadcrumb": "FERRAMENTAS > LUBRIFICANTE",
+                "google_taxonomy_id": null,
+                "meta_title": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "active": true,
+                "created_at": "2019-06-17 13:41:44",
+                "updated_at": "2019-06-17 13:41:44",
+                "children": []
+            }]
+}

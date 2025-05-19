@@ -1,0 +1,55 @@
+# Criar Produto
+POST https://api.dooca.store/products
+
+ 
+
+Body
+{
+    "category_default_id": "1", //nullable|string|max:255,
+    "brand_id": null, //nullable|integer,
+    "hotsite_id": null, //nullable|integer,
+    "name": "Produto teste", //required|string|max:255,
+    "description": "Descrição do produto", //string|nullable|max:65535,
+    "short_description": "short desc", //string|nullable|max:4096,
+    "relevance": "1", //integer|between:1,5,
+    "tags": "oi,produto,sei,la", //nullable|string|max:512,
+    "min_quantity": "1", //integer|gt:0|max:4294967295,
+    "sell_in_kit_only": "0", //boolean,
+    "meta_title": "teste", //string|nullable|max:255,
+    "meta_description": "teste", //string|nullable|max:255,
+    "meta_keywords": "teste", //string|nullable|max:255,
+    "kit": "0", //boolean,
+    "kit_markup": "1", //decimal:10,8,
+    "weight": "1.222", //nullable|decimal:8,3,
+    "depth": "2.0", //nullable|decimal,
+    "width": "3.0", //nullable|decimal,
+    "height": "4.0", //nullable|decimal,
+    "sell_out_of_stock": "1", //boolean,
+    "price_out_of_stock": "20.00", //nullable|decimal,
+    "additional_time_out_of_stock": "2", //nullable|integer|max:4294967295,
+    "price": "15.00", //nullable|decimal,
+    "price_compare": "19.90", //nullable|decimal,
+    "billet_discount": "10", //nullable|decimal,
+    "warranty": "não tem garantia", //string|nullable|max:65535,
+    "model": "modelo dooca", //string|max:255|nullable,
+    "gender": "male", //nullable|string|in:male,female,boy,girl,unisex,
+    "stock_location": "sem localizacao", //max:255|string|nullable,
+    "active": "1", //boolean,
+    "images": [{
+        "src": "http://imagens.sharkshop.com.br/tramontina/20048040EBM001B.jpg"
+    },{
+        "src": "https://imgcentauro-a.akamaihd.net/900x900/911552NH/tenis-nike-star-runner-feminino-infantil-img.jpg"
+    }],
+    "variations": [{
+                "color_id": null, //nullable|integer,
+                "attribute_value_id": null, //nullable|integer,
+                "reference": "referencia", //nullable|max:255,
+                "price": "10.00", //nullable|decimal,
+                "price_compare": "14.90", //nullable|decimal,
+                "balance": "5", //required|integer|sometimes,
+                "active": 0 //boolean,
+    }],
+    "category_ids": [1,2,3], //integer,
+    "feature_ids": [1,2,3], //integer,
+    "carrie_exclude_ids": [1,2,3] //integer,
+}

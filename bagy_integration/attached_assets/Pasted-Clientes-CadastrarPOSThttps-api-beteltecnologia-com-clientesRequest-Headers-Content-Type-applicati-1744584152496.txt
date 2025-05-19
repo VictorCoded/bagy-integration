@@ -1,0 +1,96 @@
+Clientes/CadastrarPOSThttps://api.beteltecnologia.com/clientesRequest
+Headers
+Content-Type:application/json
+access-token:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+secret-access-token:YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+Body
+{
+  "tipo_pessoa": "PF",
+  "nome": "Otávio Juan Benício da Rosa",
+  "razao_social": "",
+  "cnpj": "",
+  "inscricao_estadual": "",
+  "inscricao_municipal": "",
+  "cpf": "477.182.526-20",
+  "rg": "49.660.357-7",
+  "data_nascimento": "1945-05-16",
+  "telefone": "(11) 2533-3532",
+  "celular": "(96) 2641-9455",
+  "fax": "",
+  "email": "otaviojuanbeniciodarosa-99@agaxtur.com.br",
+  "ativo": "1",
+  "contatos": [
+    {
+      "contato": {
+        "nome": "Kevin Otávio Luan Cavalcanti",
+        "contato": "kevinotavioluancavalcanti-85@casabellavidros.com.br",
+        "cargo": "Gerente",
+        "observacao": "[-------]"
+      }
+    }
+  ],
+  "enderecos": [
+    {
+      "endereco": {
+        "cep": "31110-700",
+        "logradouro": "Rua Itararé",
+        "numero": "329",
+        "complemento": "",
+        "bairro": "Concórdia",
+        "cidade_id": "1411",
+        "nome_cidade": "Belo Horizonte",
+        "estado": "MG"
+      }
+    }
+  ]
+}
+Response
+200
+Headers
+Content-Type:application/json
+Body
+{
+  "code": 200,
+  "status": "success",
+  "data": {
+    "id": "9",
+    "tipo_pessoa": "PF",
+    "nome": "Otávio Juan Benício da Rosa",
+    "razao_social": null,
+    "cnpj": null,
+    "inscricao_estadual": "",
+    "inscricao_municipal": null,
+    "cpf": "477.182.526-20",
+    "rg": "49.660.357-7",
+    "data_nascimento": "1945-05-16",
+    "telefone": "(11) 2533-3532",
+    "celular": "(96) 2641-9455",
+    "fax": "",
+    "email": "otaviojuanbeniciodarosa-99@agaxtur.com.br",
+    "ativo": "1",
+    "contatos": [
+      {
+        "contato": {
+          "nome": "Kevin Otávio Luan Cavalcanti",
+          "contato": "kevinotavioluancavalcanti-85@casabellavidros.com.br",
+          "cargo": "Gerente",
+          "observacao": "[-------]"
+        }
+      }
+    ],
+    "enderecos": [
+      {
+        "endereco": {
+          "cep": "31110-700",
+          "logradouro": "Rua Itararé",
+          "numero": "329",
+          "complemento": "",
+          "bairro": "Concórdia",
+          "cidade_id": "1411",
+          "nome_cidade": "Belo Horizonte",
+          "estado": "MG"
+        }
+      }
+    ]
+  }
+}

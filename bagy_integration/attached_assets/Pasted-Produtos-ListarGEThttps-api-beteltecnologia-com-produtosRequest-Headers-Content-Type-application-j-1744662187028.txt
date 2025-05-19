@@ -1,0 +1,217 @@
+Produtos/ListarGEThttps://api.beteltecnologia.com/produtosRequest
+Headers
+Content-Type:application/json
+access-token:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+secret-access-token:YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+Response
+200
+Headers
+Content-Type:application/json
+Body
+{
+  "code": 200,
+  "status": "success",
+  "meta": {
+    "total_registros": 2,
+    "total_paginas": 1,
+    "total_registros_pagina": 2,
+    "pagina_atual": 1,
+    "limite_por_pagina": 20,
+    "pagina_anterior": null,
+    "url_anterior": null,
+    "proxima_pagina": null,
+    "proxima_url": null
+  },
+  "data": [
+    {
+      "id": "320",
+      "nome": "Blusão Masc Moletom",
+      "codigo_interno": "0222",
+      "codigo_barra": "2031754031703",
+      "possui_variacao": "1",
+      "possui_composicao": "0",
+      "movimenta_estoque": "1",
+      "peso": "0.000",
+      "largura": "0.000",
+      "altura": "0.000",
+      "comprimento": "0.000",
+      "ativo": "1",
+      "grupo_id": "803218",
+      "nome_grupo": "Eletrônicos",
+      "descricao": "",
+      "estoque": 60,
+      "valor_custo": "80.0000",
+      "valor_venda": "120.0000",
+      "valores": [
+        {
+          "tipo_id": "90864",
+          "nome_tipo": "Varejo",
+          "lucro_utilizado": "15.00",
+          "valor_custo": "80.0000",
+          "valor_venda": "92.0000"
+        },
+        {
+          "tipo_id": "90872",
+          "nome_tipo": "Atacado",
+          "lucro_utilizado": "30.00",
+          "valor_custo": "80.0000",
+          "valor_venda": "104.0000"
+        }
+      ],
+      "variacoes": [
+        {
+          "variacao": {
+            "id": "478",
+            "nome": "Creme",
+            "estoque": "10.00",
+            "valores": [
+              {
+                "tipo_id": "90864",
+                "nome_tipo": "Varejo",
+                "lucro_utilizado": "41.18",
+                "valor_custo": "85.0000",
+                "valor_venda": "120.0000"
+              },
+              {
+                "tipo_id": "90872",
+                "nome_tipo": "Atacado",
+                "lucro_utilizado": "41.18",
+                "valor_custo": "85.0000",
+                "valor_venda": "120.0000"
+              }
+            ]
+          }
+        },
+        {
+          "variacao": {
+            "id": "480",
+            "nome": "Marrom",
+            "estoque": "20.00",
+            "valores": [
+              {
+                "tipo_id": "90864",
+                "nome_tipo": "Varejo",
+                "lucro_utilizado": "15.00",
+                "valor_custo": "80.0000",
+                "valor_venda": "92.0000"
+              },
+              {
+                "tipo_id": "90872",
+                "nome_tipo": "Atacado",
+                "lucro_utilizado": "30.00",
+                "valor_custo": "80.0000",
+                "valor_venda": "104.0000"
+              }
+            ]
+          }
+        },
+        {
+          "variacao": {
+            "id": "482",
+            "nome": "Azul Escuro",
+            "estoque": "30.00",
+            "valores": [
+              {
+                "tipo_id": "90864",
+                "nome_tipo": "Varejo",
+                "lucro_utilizado": "15.00",
+                "valor_custo": "80.0000",
+                "valor_venda": "92.0000"
+              },
+              {
+                "tipo_id": "90872",
+                "nome_tipo": "Atacado",
+                "lucro_utilizado": "30.00",
+                "valor_custo": "80.0000",
+                "valor_venda": "104.0000"
+              }
+            ]
+          }
+        }
+      ],
+      "fiscal": {
+        "ncm": "",
+        "cest": "",
+        "peso_liquido": null,
+        "peso_bruto": null,
+        "valor_aproximado_tributos": null,
+        "valor_fixo_pis": null,
+        "valor_fixo_pis_st": null,
+        "valor_fixo_confins": null,
+        "valor_fixo_confins_st": null
+      }
+    },
+    {
+      "id": "319",
+      "nome": "Smart TV 4K LED 50",
+      "codigo_interno": "011111",
+      "codigo_barra": "2086871760609",
+      "possui_variacao": "0",
+      "possui_composicao": "0",
+      "movimenta_estoque": "1",
+      "peso": "0.000",
+      "largura": "0.000",
+      "altura": "0.000",
+      "comprimento": "0.000",
+      "ativo": "1",
+      "grupo_id": "803218",
+      "nome_grupo": "Eletrônicos",
+      "descricao": "",
+      "estoque": 10,
+      "valor_custo": "1500.2000",
+      "valor_venda": "1725.2300",
+      "valores": [
+        {
+          "tipo_id": "90864",
+          "nome_tipo": "Varejo",
+          "lucro_utilizado": "15.00",
+          "valor_custo": "1500.2000",
+          "valor_venda": "1725.2300"
+        },
+        {
+          "tipo_id": "90872",
+          "nome_tipo": "Atacado",
+          "lucro_utilizado": "30.00",
+          "valor_custo": "1500.2000",
+          "valor_venda": "1950.2600"
+        }
+      ],
+      "variacoes": [
+        {
+          "variacao": {
+            "id": "476",
+            "nome": "",
+            "estoque": "10.00",
+            "valores": [
+              {
+                "tipo_id": "90864",
+                "nome_tipo": "Varejo",
+                "lucro_utilizado": "15.00",
+                "valor_custo": "1500.2000",
+                "valor_venda": "1725.2300"
+              },
+              {
+                "tipo_id": "90872",
+                "nome_tipo": "Atacado",
+                "lucro_utilizado": "30.00",
+                "valor_custo": "1500.2000",
+                "valor_venda": "1950.2600"
+              }
+            ]
+          }
+        }
+      ],
+      "fiscal": {
+        "ncm": "85044060",
+        "cest": "",
+        "peso_liquido": "20.000",
+        "peso_bruto": "20.000",
+        "valor_aproximado_tributos": null,
+        "valor_fixo_pis": null,
+        "valor_fixo_pis_st": null,
+        "valor_fixo_confins": null,
+        "valor_fixo_confins_st": null
+      }
+    }
+  ]
+}

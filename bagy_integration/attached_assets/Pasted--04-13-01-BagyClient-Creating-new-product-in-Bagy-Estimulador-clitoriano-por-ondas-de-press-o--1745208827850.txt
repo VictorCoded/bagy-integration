@@ -1,0 +1,21 @@
+✅ 04:13:01 | BagyClient | Creating new product in Bagy: Estimulador clitoriano por ondas de pressão e penetrador ponto G G
+✅ 04:13:01 | BagyClient | Buscando produto com external_id: 75694157
+✅ 04:13:01 | BagyClient | Fazendo busca exaustiva por produto com external_id: 75694157
+⚠️ 04:13:02 | BagyClient | Produto não encontrado com external_id: 75694157 após busca exaustiva
+✅ 04:13:02 | BagyClient | Produto contém 1 variações que serão criadas automaticamente
+✅ 04:13:03 | BagyClient | Produto criado com sucesso (ID: 8457828)
+✅ 04:13:03 | BidirectionalSynchronizer | 🛒 Produto com variações: Vibrador Translúcido Personal Texturizado - À Pilha (ID: 75694061)
+✅ 04:13:03 | BidirectionalSynchronizer | 🛒 Número de variações: 3
+✅ 04:13:03 | ProductConverter | 🔍 Produto Vibrador Translúcido Personal Texturizado - À Pilha (ID: 75694061) tem variações: possui_variacao=True
+✅ 04:13:03 | ProductConverter | 📋 Processando 3 variações para o produto Vibrador Translúcido Personal Texturizado - À Pilha
+✅ 04:13:03 | ProductConverter |   - Preparando variação Azul: código original='SLH-010001' => sku='SLH-010001', estoque=23
+✅ 04:13:03 | ProductConverter |   - Preparando variação Rosa: código original='SLH-010002' => sku='SLH-010002', estoque=15
+✅ 04:13:03 | ProductConverter |   - Preparando variação Água: código original='SLH-010003' => sku='SLH-010003', estoque=8
+✅ 04:13:04 | BidirectionalSynchronizer | 📦 Criando novo produto 75694061 no Bagy
+✅ 04:13:04 | BagyClient | Creating new product in Bagy: Vibrador Translúcido Personal Texturizado - À Pilha
+✅ 04:13:04 | BagyClient | Buscando produto com external_id: 75694061
+✅ 04:13:04 | BagyClient | Fazendo busca exaustiva por produto com external_id: 75694061
+⚠️ 04:13:05 | BagyClient | Produto não encontrado com external_id: 75694061 após busca exaustiva
+✅ 04:13:05 | BagyClient | Produto contém 3 variações que serão criadas automaticamente
+❌ 04:13:05 | BagyClient | Response error 400: {"code":"color_attribute_already_exists","error":"Ocorreu um erro interno. Por favor, entre em contato com a nossa central de atendimento."}
+⚠️ 04:13:05 | BagyClient | Request failed: 400 Client Error: Bad Request for url: https://api.dooca.store/products

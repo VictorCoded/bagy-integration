@@ -1,0 +1,58 @@
+✅ 05:04:05 | root | Initializing bidirectional synchronizer
+✅ 05:04:05 | root | Running one-time synchronization
+✅ 05:04:05 | root | Synchronizing all entities bidirectionally
+✅ 05:04:05 | BidirectionalSynchronizer | 🔄 Iniciando sincronização bidirecional completa em 2025-04-21T05:04:05.615620
+✅ 05:04:05 | BidirectionalSynchronizer | 📦 Iniciando sincronização de produtos do GestãoClick para Bagy...
+✅ 05:04:05 | BidirectionalSynchronizer | 🔄 Iniciando sincronização de produtos do GestãoClick para Bagy
+✅ 05:04:05 | BidirectionalSynchronizer | 📋 Buscando catálogo de produtos do GestãoClick...
+✅ 05:04:05 | GestaoClickClient | Fetching products from GestãoClick (page 1, limit 100)
+✅ 05:04:06 | GestaoClickClient | Fetching products from GestãoClick (page 2, limit 100)
+✅ 05:04:07 | GestaoClickClient | Fetching products from GestãoClick (page 3, limit 100)
+✅ 05:04:08 | GestaoClickClient | Fetching products from GestãoClick (page 4, limit 100)
+✅ 05:04:09 | GestaoClickClient | Fetching products from GestãoClick (page 5, limit 100)
+✅ 05:04:10 | GestaoClickClient | Fetching products from GestãoClick (page 6, limit 100)
+✅ 05:04:11 | GestaoClickClient | Fetching products from GestãoClick (page 7, limit 100)
+✅ 05:04:12 | GestaoClickClient | Fetching products from GestãoClick (page 8, limit 100)
+✅ 05:04:13 | GestaoClickClient | Fetching products from GestãoClick (page 9, limit 100)
+✅ 05:04:14 | GestaoClickClient | Fetching products from GestãoClick (page 10, limit 100)
+✅ 05:04:15 | GestaoClickClient | Fetching products from GestãoClick (page 11, limit 100)
+✅ 05:04:16 | GestaoClickClient | Fetching products from GestãoClick (page 12, limit 100)
+✅ 05:04:17 | GestaoClickClient | Fetching products from GestãoClick (page 13, limit 100)
+✅ 05:04:18 | GestaoClickClient | Fetching products from GestãoClick (page 14, limit 100)
+✅ 05:04:19 | GestaoClickClient | Fetching products from GestãoClick (page 15, limit 100)
+✅ 05:04:20 | GestaoClickClient | Fetching products from GestãoClick (page 16, limit 100)
+✅ 05:04:21 | GestaoClickClient | Fetching products from GestãoClick (page 17, limit 100)
+✅ 05:04:22 | GestaoClickClient | Fetching products from GestãoClick (page 18, limit 100)
+✅ 05:04:23 | GestaoClickClient | Fetching products from GestãoClick (page 19, limit 100)
+✅ 05:04:24 | GestaoClickClient | Fetching products from GestãoClick (page 20, limit 100)
+✅ 05:04:25 | GestaoClickClient | Fetching products from GestãoClick (page 21, limit 100)
+✅ 05:04:26 | Pagination | Atingido o limite de páginas da API GestãoClick (21/21)
+✅ 05:04:26 | Pagination | Recuperado um total de 2000 itens de 21 páginas
+✅ 05:04:26 | BidirectionalSynchronizer | 📦 Found 2000 products in GestãoClick
+✅ 05:04:26 | ProductConverter | 🧪 [TESTE-VAR] Definindo tipo do produto DIV2 Algema em metal Pelúcia Rosa como 'simple'
+❌ 05:04:26 | BidirectionalSynchronizer | ❌ Erro ao ler arquivo de produtos incompletos: Expecting value: line 1 column 1 (char 0)
+✅ 05:04:26 | BidirectionalSynchronizer | 📦 Criando novo produto 76545877 no Bagy
+✅ 05:04:26 | BagyClient | Creating new product in Bagy: DIV2 Algema em metal Pelúcia Rosa
+✅ 05:04:26 | BagyClient | Buscando produto com external_id: 76545877
+✅ 05:04:27 | BagyClient | Produto encontrado com external_id=76545877 (ID: 8458005)
+✅ 05:04:27 | BagyClient | Produto com external_id 76545877 já existe no Bagy (ID: 8458005)
+✅ 05:04:27 | ProductConverter | 🧪 [TESTE-VAR] Definindo tipo do produto DIV2 Algema em metal Pelúcia Zebra como 'simple'
+❌ 05:04:27 | BidirectionalSynchronizer | ❌ Erro ao ler arquivo de produtos incompletos: Expecting value: line 1 column 1 (char 0)
+✅ 05:04:27 | BidirectionalSynchronizer | 📦 Criando novo produto 76545864 no Bagy
+✅ 05:04:27 | BagyClient | Creating new product in Bagy: DIV2 Algema em metal Pelúcia Zebra
+✅ 05:04:27 | BagyClient | Buscando produto com external_id: 76545864
+✅ 05:04:28 | BagyClient | Fazendo busca exaustiva por produto com external_id: 76545864
+⚠️ 05:04:28 | BagyClient | Produto não encontrado com external_id: 76545864 após busca exaustiva
+✅ 05:04:28 | BagyClient | 🧪 [TESTE-VAR] Produto contém 1 variações
+✅ 05:04:28 | BagyClient | 🧪 [TESTE-VAR] Primeira variação: {'product_id': None, 'external_id': '76545864', 'reference': 'L404', 'sku': 'L404', 'gtin': '7899711605139', 'price': 50.0, 'price_compare': 50.0, 'active': True, 'balance': 4, 'attributes': [{'name': 'Opção', 'value': 'Padrão'}]}
+✅ 05:04:28 | BagyClient | 🧪 [TESTE-VAR] Variação 1: ID=76545864, SKU=L404
+✅ 05:04:28 | BagyClient | 🧪 [TESTE-VAR] Removendo campo 'attributes' da variação 1
+✅ 05:04:28 | BagyClient | 🧪 [TESTE-VAR] Removendo 1 variações do payload para criar primeiro o produto base
+✅ 05:04:29 | BagyClient | Produto criado com sucesso (ID: 8458011)
+✅ 05:04:29 | BagyClient | 🧪 [TESTE-VAR] Criando variação 1/1 para o produto 8458011
+❌ 05:04:30 | BagyClient | Response error 400: {"code":"color_attribute_already_exists","error":"Ocorreu um erro interno. Por favor, entre em contato com a nossa central de atendimento."}
+⚠️ 05:04:30 | BagyClient | Request failed: 400 Client Error: Bad Request for url: https://api.dooca.store/variations
+✅ 05:04:30 | BagyClient | Retrying in 30 seconds...
+❌ 05:05:00 | BagyClient | Response error 400: {"code":"color_attribute_already_exists","error":"Ocorreu um erro interno. Por favor, entre em contato com a nossa central de atendimento."}
+⚠️ 05:05:00 | BagyClient | Request failed: 400 Client Error: Bad Request for url: https://api.dooca.store/variations
+✅ 05:05:00 | BagyClient | Retrying in 60 seconds...

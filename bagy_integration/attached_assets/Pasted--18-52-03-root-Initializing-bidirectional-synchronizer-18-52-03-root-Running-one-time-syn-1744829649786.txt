@@ -1,0 +1,63 @@
+✅ 18:52:03 | root | Initializing bidirectional synchronizer
+✅ 18:52:03 | root | Running one-time synchronization
+✅ 18:52:03 | root | Synchronizing all entities bidirectionally
+✅ 18:52:03 | BidirectionalSynchronizer | 🔄 Iniciando sincronização bidirecional completa em 2025-04-16T18:52:03.319427
+✅ 18:52:03 | BidirectionalSynchronizer | 📦 Iniciando sincronização de produtos do GestãoClick para Bagy...
+✅ 18:52:03 | BidirectionalSynchronizer | 🔄 Iniciando sincronização de produtos do GestãoClick para Bagy
+✅ 18:52:03 | BidirectionalSynchronizer | 📋 Buscando catálogo de produtos do GestãoClick...
+✅ 18:52:03 | GestaoClickClient | Fetching products from GestãoClick (page 1, limit 100)
+✅ 18:52:04 | GestaoClickClient | Fetching products from GestãoClick (page 2, limit 100)
+✅ 18:52:05 | GestaoClickClient | Fetching products from GestãoClick (page 3, limit 100)
+✅ 18:52:06 | GestaoClickClient | Fetching products from GestãoClick (page 4, limit 100)
+✅ 18:52:07 | GestaoClickClient | Fetching products from GestãoClick (page 5, limit 100)
+✅ 18:52:08 | GestaoClickClient | Fetching products from GestãoClick (page 6, limit 100)
+✅ 18:52:09 | GestaoClickClient | Fetching products from GestãoClick (page 7, limit 100)
+✅ 18:52:10 | GestaoClickClient | Fetching products from GestãoClick (page 8, limit 100)
+✅ 18:52:12 | GestaoClickClient | Fetching products from GestãoClick (page 9, limit 100)
+✅ 18:52:13 | GestaoClickClient | Fetching products from GestãoClick (page 10, limit 100)
+✅ 18:52:14 | GestaoClickClient | Fetching products from GestãoClick (page 11, limit 100)
+✅ 18:52:15 | GestaoClickClient | Fetching products from GestãoClick (page 12, limit 100)
+✅ 18:52:16 | GestaoClickClient | Fetching products from GestãoClick (page 13, limit 100)
+✅ 18:52:17 | GestaoClickClient | Fetching products from GestãoClick (page 14, limit 100)
+✅ 18:52:18 | GestaoClickClient | Fetching products from GestãoClick (page 15, limit 100)
+✅ 18:52:19 | GestaoClickClient | Fetching products from GestãoClick (page 16, limit 100)
+✅ 18:52:20 | GestaoClickClient | Fetching products from GestãoClick (page 17, limit 100)
+✅ 18:52:22 | GestaoClickClient | Fetching products from GestãoClick (page 18, limit 100)
+✅ 18:52:23 | GestaoClickClient | Fetching products from GestãoClick (page 19, limit 100)
+✅ 18:52:24 | GestaoClickClient | Fetching products from GestãoClick (page 20, limit 100)
+✅ 18:52:25 | GestaoClickClient | Fetching products from GestãoClick (page 21, limit 100)
+✅ 18:52:26 | Pagination | Atingido o limite de páginas da API GestãoClick (21/21)
+✅ 18:52:26 | Pagination | Recuperado um total de 2000 itens de 21 páginas
+✅ 18:52:26 | BidirectionalSynchronizer | 📦 Found 2000 products in GestãoClick
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: VIBRE DOCE D LEITE GEL DE MASSAGEM ELETRIZANTE 15G - Campos faltantes: descrição, peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: VIBRE UVA GEL DE MASSAGEM ELETRIZANTE 15G - Campos faltantes: descrição, peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: CLAREADOR 50ML DS - Campos faltantes: peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: Cápsula vibratória recarregável. - Campos faltantes: descrição, peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: ESFOLIANTE SWEET GIRL MORANGO - Campos faltantes: descrição
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: Lubrificante Love Lub Bubbalove 60g - Campos faltantes: descrição, peso
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: ESFOLIANTE SWEET GIRL CHICLETE - Campos faltantes: descrição, peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: ESFOLIANTE SWEET GIRL CITRUS - Campos faltantes: descrição, peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: GEL DESLIZANTE 120ML DS - Campos faltantes: peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: SABONETE 200GR DS - Campos faltantes: peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: GEL CLITORIANO DS - Campos faltantes: peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: ESFOLIANTE 150ML DS - Campos faltantes: peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: DESODORANTE DS 160ML - Campos faltantes: peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: CALDA BEIJAVEL DS - Campos faltantes: peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: BRUMA 120ML DS - Campos faltantes: peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: VIBRATION AMORA POWER - Campos faltantes: peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: OOH DELICIA CALDA PULSANTE AMORA - Campos faltantes: peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: SABONETE INTIMO MANTEIGA DE KARITE 200ML.  Lotes:32045 Qtd.: 10,000, - Campos faltantes: descrição, peso, altura, largura, profundidade
+✅ 18:52:26 | BidirectionalSynchronizer | 📦 Criando novo produto 75990116 no Bagy
+✅ 18:52:26 | BagyClient | Creating new product in Bagy: PROTESE MACICA ROSA 15X5
+✅ 18:52:28 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: INTIMA CARE SERUM.  Lotes:27508 Qtd.: 10,000, - Campos faltantes: descrição, peso, altura, largura, profundidade
+✅ 18:52:28 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: HOT BALL 50 TONS - LIBERDADE.  Lotes:30534 Qtd.: 50,000, - Campos faltantes: descrição, peso, altura, largura, profundidade
+✅ 18:52:28 | BidirectionalSynchronizer | 📦 Criando novo produto 75990112 no Bagy
+✅ 18:52:28 | BagyClient | Creating new product in Bagy: DELIRIUM GEL UMECTANTE CORPORAL 25G.  Lotes:30788 Qtd.: 50,000,
+✅ 18:52:38 | BidirectionalSynchronizer | 📦 Criando novo produto 75933163 no Bagy
+✅ 18:52:38 | BagyClient | Creating new product in Bagy: SACHE SEDENTÃO 3G
+❌ 18:52:39 | BagyClient | Response error 422: {"category_ids.0":["validation.exists_custom"]}
+⚠️ 18:52:39 | BagyClient | Request failed: 422 Client Error: Unprocessable Entity for url: https://api.dooca.store/products
+✅ 18:52:39 | BagyClient | Retrying in 30 seconds...
+❌ 18:53:10 | BagyClient | Response error 422: {"category_ids.0":["validation.exists_custom"]}
+⚠️ 18:53:10 | BagyClient | Request failed: 422 Client Error: Unprocessable Entity for url: https://api.dooca.store/products
+✅ 18:53:10 | BagyClient | Retrying in 60 seconds...

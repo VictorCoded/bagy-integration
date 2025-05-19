@@ -1,0 +1,854 @@
+Produtos
+Tiago Assis
+Tiago Assis
+Atualizado há 16 dias
+Ainda não seguido por ninguém
+Atualmente, o limite de variações é de 150 por produto.
+Filtros
+Pode-se utilizar filtros para restringir o retorno de dados. São utilizados, passando um parâmetro na URL requisitada. Observe a tabela de possíveis filtros abaixo
+
+ 
+
+Param	Descrição	Tipo	Valores	Ex
+ids	Filtra pedidos pelo id	string	 	?ids=1,2,3
+name	Filtra produto pelo nome	string	 	?name=produto
+active	Filtra produto ativo	string	 	?active=1
+category_id	Filtra produto pelo ID da categoria	string	 	
+?category_id=29
+ 
+
+# Criar Produto
+POST https://api.dooca.store/products
+
+ 
+
+Body
+{
+    "category_default_id": "1", //nullable|string|max:255,
+    "brand_id": null, //nullable|integer,
+    "hotsite_id": null, //nullable|integer,
+    "name": "Produto teste", //required|string|max:255,
+    "description": "Descrição do produto", //string|nullable|max:65535,
+    "short_description": "short desc", //string|nullable|max:4096,
+    "relevance": "1", //integer|between:1,5,
+    "tags": "oi,produto,sei,la", //nullable|string|max:512,
+    "min_quantity": "1", //integer|gt:0|max:4294967295,
+    "sell_in_kit_only": "0", //boolean,
+    "meta_title": "teste", //string|nullable|max:255,
+    "meta_description": "teste", //string|nullable|max:255,
+    "meta_keywords": "teste", //string|nullable|max:255,
+    "kit": "0", //boolean,
+    "kit_markup": "1", //decimal:10,8,
+    "weight": "1.222", //nullable|decimal:8,3,
+    "depth": "2.0", //nullable|decimal,
+    "width": "3.0", //nullable|decimal,
+    "height": "4.0", //nullable|decimal,
+    "sell_out_of_stock": "1", //boolean,
+    "price_out_of_stock": "20.00", //nullable|decimal,
+    "additional_time_out_of_stock": "2", //nullable|integer|max:4294967295,
+    "price": "15.00", //nullable|decimal,
+    "price_compare": "19.90", //nullable|decimal,
+    "billet_discount": "10", //nullable|decimal,
+    "warranty": "não tem garantia", //string|nullable|max:65535,
+    "model": "modelo dooca", //string|max:255|nullable,
+    "gender": "male", //nullable|string|in:male,female,boy,girl,unisex,
+    "stock_location": "sem localizacao", //max:255|string|nullable,
+    "active": "1", //boolean,
+    "images": [{
+        "src": "http://imagens.sharkshop.com.br/tramontina/20048040EBM001B.jpg"
+    },{
+        "src": "https://imgcentauro-a.akamaihd.net/900x900/911552NH/tenis-nike-star-runner-feminino-infantil-img.jpg"
+    }],
+    "variations": [{
+                "color_id": null, //nullable|integer,
+                "attribute_value_id": null, //nullable|integer,
+                "reference": "referencia", //nullable|max:255,
+                "price": "10.00", //nullable|decimal,
+                "price_compare": "14.90", //nullable|decimal,
+                "balance": "5", //required|integer|sometimes,
+                "active": 0 //boolean,
+    }],
+    "category_ids": [1,2,3], //integer,
+    "feature_ids": [1,2,3], //integer,
+    "carrie_exclude_ids": [1,2,3] //integer,
+}
+ 
+
+Status: 201
+ 
+
+# Criar Produto (KIT)
+POST https://api.dooca.store/products
+
+ 
+
+Body
+{
+    "name": "Kit teste",
+    "kit": 1,
+    "active": true,
+    "#components": [{
+        "grid_id": "1-2"
+    },{
+        "grid_id": "2-7"
+    },{
+        "grid_id": "3-7"
+    },{
+        "grid_id": "4-2"
+    }],
+    "components": [{
+        "grid_id": "1-2",
+        "product_component_group_id": "1",
+        "quantity": "1"
+    },{
+        "grid_id": "2-7",
+        "product_component_group_id": "1",
+        "quantity": "1"
+    },{
+        "grid_id": "3-7",
+        "product_component_group_id": "1",
+        "quantity": "1",
+        "default": "1"
+    },{
+        "grid_id": "4-2",
+        "product_component_group_id": "1",
+        "quantity": "1"
+    },{
+        "grid_id": "7",
+        "product_component_group_id": "1",
+        "quantity": "1"
+    },{
+        "grid_id": "8-11",
+        "product_component_group_id": "3",
+        "quantity": "1"
+    },{
+        "grid_id": "10",
+        "product_component_group_id": "3",
+        "quantity": "1"
+    },{
+        "grid_id": "13-14",
+        "product_component_group_id": "3",
+        "quantity": "1"
+    },{
+        "grid_id": "14-3",
+        "product_component_group_id": "3",
+        "quantity": "1",
+        "default": "1"
+    },{
+        "grid_id": "17",
+        "product_component_group_id": "3",
+        "quantity": "1"
+    },{
+        "grid_id": "18-8",
+        "product_component_group_id": "3",
+        "quantity": "1"
+    },{
+        "grid_id": "25-12",
+        "product_component_group_id": "7",
+        "quantity": "1"
+    },{
+        "grid_id": "25-12",
+        "product_component_group_id": "7",
+        "quantity": "2"
+    },{
+        "grid_id": "25-12",
+        "product_component_group_id": "7",
+        "quantity": "4",
+        "default": "1"
+    }]
+}
+ 
+
+Status: 201
+ 
+
+# Editar Produto
+PUT https://api.dooca.store/products/:id
+
+Parâmetro: O ID do produto.
+
+A edição do registro pode ser parcial ou total.
+
+ 
+
+{
+    "name": "Novo nome do Produto"
+}
+ 
+
+Status: 200
+ 
+
+# Deletar Produto
+DELETE https://api.dooca.store/products/:id
+
+Parâmetro: O ID do produto.
+
+ 
+
+Response: 204
+ 
+
+# Consultar Produto
+GET https://api.dooca.store/products/:id
+
+Parâmetro: O ID do produto.
+
+ 
+
+HTTP STATUS: 200 OK
+{
+    "id": 163,
+    "external_id": null,
+    "category_default_id": 32,
+    "brand_id": 1,
+    "hotsite_id": null,
+    "name": "Cópia de bola de futebol",
+    "slug": "copia-de-bola-de-futebol",
+    "url": "http://loja.dooca.local/copia-de-bola-de-futebol",
+    "description": "<p>bola de futebol</p>",
+    "short_description": null,
+    "relevance": 1,
+    "tags": null,
+    "min_quantity": 1,
+    "max_quantity": null,
+    "sell_in_kit_only": false,
+    "meta_title": null,
+    "meta_description": null,
+    "meta_keywords": null,
+    "kit": false,
+    "kit_markup": 1,
+    "is_virtual": false,
+    "images": [],
+    "attachments": [],
+    "video": null,
+    "weight": null,
+    "depth": null,
+    "width": null,
+    "height": null,
+    "sell_out_of_stock": false,
+    "price_out_of_stock": null,
+    "additional_time_out_of_stock": null,
+    "price": "30.00",
+    "price_compare": "50.00",
+    "billet_discount": null,
+    "warranty": null,
+    "model": null,
+    "gender": null,
+    "age_group": null,
+    "stock_location": null,
+    "st": false,
+    "ncm": null,
+    "ipi": null,
+    "active": true,
+    "has_gift_wrapping": true,
+    "created_at": "2020-03-19 17:18:31",
+    "updated_at": "2020-03-23 14:07:45",
+    "brand": {
+        "id": 1,
+        "external_id": null,
+        "hotsite_id": null,
+        "name": "Nike",
+        "slug": "nike",
+        "description": null,
+        "short_description": null,
+        "image": null,
+        "banner": null,
+        "meta_title": null,
+        "meta_keywords": null,
+        "meta_description": null,
+        "position": 1,
+        "url": "http://loja.dooca.local/nike",
+        "active": true,
+        "created_at": "2020-01-29 11:54:06",
+        "updated_at": "2020-01-29 11:54:06"
+    },
+    "category_default": {
+        "id": 32,
+        "parent_id": null,
+        "hotsite_id": null,
+        "external_id": null,
+        "name": "string",
+        "slug": "string",
+        "description": null,
+        "image": null,
+        "banner": null,
+        "banner_link": null,
+        "position": null,
+        "depth": 1,
+        "breadcrumb": "string",
+        "google_taxonomy_id": null,
+        "meta_title": null,
+        "meta_keywords": null,
+        "meta_description": null,
+        "url": "http://loja.dooca.local/string",
+        "active": true,
+        "created_at": "2020-03-09 16:06:30",
+        "updated_at": "2020-03-09 16:06:30"
+    },
+    "categories": [
+        {
+            "id": 32,
+            "parent_id": null,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "string",
+            "slug": "string",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 1,
+            "breadcrumb": "string",
+            "google_taxonomy_id": null,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/string",
+            "active": true,
+            "created_at": "2020-03-09 16:06:30",
+            "updated_at": "2020-03-09 16:06:30"
+        },
+        {
+            "id": 34,
+            "parent_id": 32,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "string2",
+            "slug": "string2",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 2,
+            "breadcrumb": "string > string2",
+            "google_taxonomy_id": 772,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/string2",
+            "active": true,
+            "created_at": "2020-03-12 15:17:45",
+            "updated_at": "2020-03-12 15:17:45"
+        }
+    ],
+    "features": [
+        {
+            "id": 1,
+            "external_id": null,
+            "name": "estilo",
+            "slug": "estilo",
+            "image": null,
+            "active": true,
+            "created_at": "2020-03-12 18:13:23",
+            "updated_at": "2020-03-18 08:54:39",
+            "values": [
+                {
+                    "id": 4,
+                    "feature_id": 1,
+                    "external_id": null,
+                    "name": "couro",
+                    "slug": "couro",
+                    "image": null,
+                    "position": 1,
+                    "active": true,
+                    "created_at": "2020-03-18 08:54:39",
+                    "updated_at": "2020-03-18 08:54:39"
+                },
+                {
+                    "id": 5,
+                    "feature_id": 1,
+                    "external_id": null,
+                    "name": "ouro",
+                    "slug": "ouro",
+                    "image": null,
+                    "position": 3,
+                    "active": true,
+                    "created_at": "2020-03-18 08:54:39",
+                    "updated_at": "2020-03-18 08:54:39"
+                },
+                {
+                    "id": 6,
+                    "feature_id": 1,
+                    "external_id": null,
+                    "name": "metal",
+                    "slug": "metal",
+                    "image": null,
+                    "position": 2,
+                    "active": true,
+                    "created_at": "2020-03-18 08:54:39",
+                    "updated_at": "2020-03-18 08:54:39"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "external_id": null,
+            "name": "Linha",
+            "slug": "linha",
+            "image": null,
+            "active": true,
+            "created_at": "2020-03-20 14:23:52",
+            "updated_at": "2020-03-20 14:23:52",
+            "values": [
+                {
+                    "id": 7,
+                    "feature_id": 3,
+                    "external_id": null,
+                    "name": "Jovem",
+                    "slug": "jovem",
+                    "image": null,
+                    "position": 1,
+                    "active": true,
+                    "created_at": "2020-03-20 14:23:52",
+                    "updated_at": "2020-03-20 14:23:52"
+                }
+            ]
+        }
+    ],
+    "exclude_carriers": [],
+    "components": [],
+    "variations": [
+        {
+            "id": 173,
+            "product_id": 163,
+            "color_id": 1,
+            "grid_id": "163-1",
+            "color_secondary_id": null,
+            "attribute_value_id": 1,
+            "attribute_value_secondary_id": null,
+            "external_id": null,
+            "reference": null,
+            "sku": null,
+            "gtin": "234234",
+            "mpn": "2342",
+            "price": "30.00",
+            "price_compare": null,
+            "additional_shipping_time": null,
+            "images": null,
+            "position": null,
+            "created_at": "2020-03-19 17:18:31",
+            "updated_at": "2020-03-23 14:07:45",
+            "active": true,
+            "balance": 0,
+            "reserved_balance": 0,
+            "color": {
+                "id": 1,
+                "external_id": null,
+                "name": "cor cinza",
+                "slug": "cor-cinza",
+                "hexadecimal": "#acadae",
+                "image": null,
+                "position": null,
+                "active": true,
+                "created_at": "2020-03-12 18:08:34",
+                "updated_at": "2020-03-12 18:08:34"
+            },
+            "attribute": {
+                "id": 1,
+                "attribute_id": 2,
+                "attribute_name": "peso",
+                "external_id": null,
+                "name": "2kg",
+                "slug": "2kg",
+                "position": 1,
+                "active": true,
+                "created_at": "2020-03-12 16:52:32",
+                "updated_at": "2020-03-12 16:52:32"
+            },
+            "attribute_secondary": null,
+            "url": "http://loja.dooca.local/copia-de-bola-de-futebol/cor-cinza"
+        },
+        {
+            "id": 178,
+            "product_id": 163,
+            "color_id": 3,
+            "grid_id": "163-3",
+            "color_secondary_id": null,
+            "attribute_value_id": 1,
+            "attribute_value_secondary_id": null,
+            "external_id": null,
+            "reference": null,
+            "sku": null,
+            "gtin": null,
+            "mpn": null,
+            "price": null,
+            "price_compare": null,
+            "additional_shipping_time": null,
+            "images": null,
+            "position": null,
+            "created_at": "2020-03-20 15:16:42",
+            "updated_at": "2020-03-20 15:57:25",
+            "active": true,
+            "balance": 0,
+            "reserved_balance": 0,
+            "color": {
+                "id": 3,
+                "external_id": null,
+                "name": "preto",
+                "slug": "preto",
+                "hexadecimal": "#3e120c",
+                "image": null,
+                "position": null,
+                "active": true,
+                "created_at": "2020-03-16 17:45:49",
+                "updated_at": "2020-03-16 17:45:49"
+            },
+            "attribute": {
+                "id": 1,
+                "attribute_id": 2,
+                "attribute_name": "peso",
+                "external_id": null,
+                "name": "2kg",
+                "slug": "2kg",
+                "position": 1,
+                "active": true,
+                "created_at": "2020-03-12 16:52:32",
+                "updated_at": "2020-03-12 16:52:32"
+            },
+            "attribute_secondary": null,
+            "url": "http://loja.dooca.local/copia-de-bola-de-futebol/preto"
+        }
+    ]
+}
+ 
+
+# Listar Produtos
+GET https://api.dooca.store/products
+
+ 
+
+HTTP STATUS: 200 OK 
+{
+    "id": 163,
+    "external_id": null,
+    "category_default_id": 32,
+    "brand_id": 1,
+    "hotsite_id": null,
+    "name": "Cópia de bola de futebol",
+    "slug": "copia-de-bola-de-futebol",
+    "url": "http://loja.dooca.local/copia-de-bola-de-futebol",
+    "description": "<p>bola de futebol</p>",
+    "short_description": null,
+    "relevance": 1,
+    "tags": null,
+    "min_quantity": 1,
+    "max_quantity": null,
+    "sell_in_kit_only": false,
+    "meta_title": null,
+    "meta_description": null,
+    "meta_keywords": null,
+    "kit": false,
+    "kit_markup": 1,
+    "is_virtual": false,
+    "images": [],
+    "attachments": [],
+    "video": null,
+    "weight": null,
+    "depth": null,
+    "width": null,
+    "height": null,
+    "sell_out_of_stock": false,
+    "price_out_of_stock": null,
+    "additional_time_out_of_stock": null,
+    "price": "30.00",
+    "price_compare": "50.00",
+    "billet_discount": null,
+    "warranty": null,
+    "model": null,
+    "gender": null,
+    "age_group": null,
+    "stock_location": null,
+    "st": false,
+    "ncm": null,
+    "ipi": null,
+    "active": true,
+    "has_gift_wrapping": true,
+    "created_at": "2020-03-19 17:18:31",
+    "updated_at": "2020-03-23 14:07:45",
+    "brand": {
+        "id": 1,
+        "external_id": null,
+        "hotsite_id": null,
+        "name": "Nike",
+        "slug": "nike",
+        "description": null,
+        "short_description": null,
+        "image": null,
+        "banner": null,
+        "meta_title": null,
+        "meta_keywords": null,
+        "meta_description": null,
+        "position": 1,
+        "url": "http://loja.dooca.local/nike",
+        "active": true,
+        "created_at": "2020-01-29 11:54:06",
+        "updated_at": "2020-01-29 11:54:06"
+    },
+    "category_default": {
+        "id": 32,
+        "parent_id": null,
+        "hotsite_id": null,
+        "external_id": null,
+        "name": "string",
+        "slug": "string",
+        "description": null,
+        "image": null,
+        "banner": null,
+        "banner_link": null,
+        "position": null,
+        "depth": 1,
+        "breadcrumb": "string",
+        "google_taxonomy_id": null,
+        "meta_title": null,
+        "meta_keywords": null,
+        "meta_description": null,
+        "url": "http://loja.dooca.local/string",
+        "active": true,
+        "created_at": "2020-03-09 16:06:30",
+        "updated_at": "2020-03-09 16:06:30"
+    },
+    "categories": [
+        {
+            "id": 32,
+            "parent_id": null,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "string",
+            "slug": "string",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 1,
+            "breadcrumb": "string",
+            "google_taxonomy_id": null,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/string",
+            "active": true,
+            "created_at": "2020-03-09 16:06:30",
+            "updated_at": "2020-03-09 16:06:30"
+        },
+        {
+            "id": 34,
+            "parent_id": 32,
+            "hotsite_id": null,
+            "external_id": null,
+            "name": "string2",
+            "slug": "string2",
+            "description": null,
+            "image": null,
+            "banner": null,
+            "banner_link": null,
+            "position": null,
+            "depth": 2,
+            "breadcrumb": "string > string2",
+            "google_taxonomy_id": 772,
+            "meta_title": null,
+            "meta_keywords": null,
+            "meta_description": null,
+            "url": "http://loja.dooca.local/string2",
+            "active": true,
+            "created_at": "2020-03-12 15:17:45",
+            "updated_at": "2020-03-12 15:17:45"
+        }
+    ],
+    "features": [
+        {
+            "id": 1,
+            "external_id": null,
+            "name": "estilo",
+            "slug": "estilo",
+            "image": null,
+            "active": true,
+            "created_at": "2020-03-12 18:13:23",
+            "updated_at": "2020-03-18 08:54:39",
+            "values": [
+                {
+                    "id": 4,
+                    "feature_id": 1,
+                    "external_id": null,
+                    "name": "couro",
+                    "slug": "couro",
+                    "image": null,
+                    "position": 1,
+                    "active": true,
+                    "created_at": "2020-03-18 08:54:39",
+                    "updated_at": "2020-03-18 08:54:39"
+                },
+                {
+                    "id": 5,
+                    "feature_id": 1,
+                    "external_id": null,
+                    "name": "ouro",
+                    "slug": "ouro",
+                    "image": null,
+                    "position": 3,
+                    "active": true,
+                    "created_at": "2020-03-18 08:54:39",
+                    "updated_at": "2020-03-18 08:54:39"
+                },
+                {
+                    "id": 6,
+                    "feature_id": 1,
+                    "external_id": null,
+                    "name": "metal",
+                    "slug": "metal",
+                    "image": null,
+                    "position": 2,
+                    "active": true,
+                    "created_at": "2020-03-18 08:54:39",
+                    "updated_at": "2020-03-18 08:54:39"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "external_id": null,
+            "name": "Linha",
+            "slug": "linha",
+            "image": null,
+            "active": true,
+            "created_at": "2020-03-20 14:23:52",
+            "updated_at": "2020-03-20 14:23:52",
+            "values": [
+                {
+                    "id": 7,
+                    "feature_id": 3,
+                    "external_id": null,
+                    "name": "Jovem",
+                    "slug": "jovem",
+                    "image": null,
+                    "position": 1,
+                    "active": true,
+                    "created_at": "2020-03-20 14:23:52",
+                    "updated_at": "2020-03-20 14:23:52"
+                }
+            ]
+        }
+    ],
+    "exclude_carriers": [],
+    "components": [],
+    "variations": [
+        {
+            "id": 173,
+            "product_id": 163,
+            "color_id": 1,
+            "grid_id": "163-1",
+            "color_secondary_id": null,
+            "attribute_value_id": 1,
+            "attribute_value_secondary_id": null,
+            "external_id": null,
+            "reference": null,
+            "sku": null,
+            "gtin": "234234",
+            "mpn": "2342",
+            "price": "30.00",
+            "price_compare": null,
+            "additional_shipping_time": null,
+            "images": null,
+            "position": null,
+            "created_at": "2020-03-19 17:18:31",
+            "updated_at": "2020-03-23 14:07:45",
+            "active": true,
+            "balance": 0,
+            "reserved_balance": 0,
+            "color": {
+                "id": 1,
+                "external_id": null,
+                "name": "cor cinza",
+                "slug": "cor-cinza",
+                "hexadecimal": "#acadae",
+                "image": null,
+                "position": null,
+                "active": true,
+                "created_at": "2020-03-12 18:08:34",
+                "updated_at": "2020-03-12 18:08:34"
+            },
+            "attribute": {
+                "id": 1,
+                "attribute_id": 2,
+                "attribute_name": "peso",
+                "external_id": null,
+                "name": "2kg",
+                "slug": "2kg",
+                "position": 1,
+                "active": true,
+                "created_at": "2020-03-12 16:52:32",
+                "updated_at": "2020-03-12 16:52:32"
+            },
+            "attribute_secondary": null,
+            "url": "http://loja.dooca.local/copia-de-bola-de-futebol/cor-cinza"
+        },
+        {
+            "id": 178,
+            "product_id": 163,
+            "color_id": 3,
+            "grid_id": "163-3",
+            "color_secondary_id": null,
+            "attribute_value_id": 1,
+            "attribute_value_secondary_id": null,
+            "external_id": null,
+            "reference": null,
+            "sku": null,
+            "gtin": null,
+            "mpn": null,
+            "price": null,
+            "price_compare": null,
+            "additional_shipping_time": null,
+            "images": null,
+            "position": null,
+            "created_at": "2020-03-20 15:16:42",
+            "updated_at": "2020-03-20 15:57:25",
+            "active": true,
+            "balance": 0,
+            "reserved_balance": 0,
+            "color": {
+                "id": 3,
+                "external_id": null,
+                "name": "preto",
+                "slug": "preto",
+                "hexadecimal": "#3e120c",
+                "image": null,
+                "position": null,
+                "active": true,
+                "created_at": "2020-03-16 17:45:49",
+                "updated_at": "2020-03-16 17:45:49"
+            },
+            "attribute": {
+                "id": 1,
+                "attribute_id": 2,
+                "attribute_name": "peso",
+                "external_id": null,
+                "name": "2kg",
+                "slug": "2kg",
+                "position": 1,
+                "active": true,
+                "created_at": "2020-03-12 16:52:32",
+                "updated_at": "2020-03-12 16:52:32"
+            },
+            "attribute_secondary": null,
+            "url": "http://loja.dooca.local/copia-de-bola-de-futebol/preto"
+        }
+    ],
+.    "links": {
+        "first": "http://api.dooca.local/products?page=1",
+        "last": "http://api.dooca.local/products?page=15",
+        "prev": null,
+        "next": "http://api.dooca.local/products?page=2"
+    },
+        "meta": {
+            "current_page": 1,
+            "from": 1,
+            "last_page": 15,
+            "path": "http://api.dooca.local/products",
+            "per_page": 25,
+            "to": 25,
+            "total": 1
+    }
+}

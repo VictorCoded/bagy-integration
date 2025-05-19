@@ -1,0 +1,20 @@
+✅ 04:59:44 | ProductConverter | 🧪 [TESTE-VAR] Definindo tipo do produto DIV2 Algema em metal Pelúcia Onça como 'simple'
+❌ 04:59:44 | BidirectionalSynchronizer | ❌ Erro ao ler arquivo de produtos incompletos: Expecting value: line 1 column 1 (char 0)
+✅ 04:59:45 | BidirectionalSynchronizer | 📦 Criando novo produto 76545899 no Bagy
+✅ 04:59:45 | BagyClient | Creating new product in Bagy: DIV2 Algema em metal Pelúcia Onça
+✅ 04:59:45 | BagyClient | Buscando produto com external_id: 76545899
+✅ 04:59:45 | BagyClient | Fazendo busca exaustiva por produto com external_id: 76545899
+⚠️ 04:59:46 | BagyClient | Produto não encontrado com external_id: 76545899 após busca exaustiva
+✅ 04:59:46 | BagyClient | 🧪 [TESTE-VAR] Produto contém 1 variações
+✅ 04:59:46 | BagyClient | 🧪 [TESTE-VAR] Primeira variação: {'product_id': None, 'external_id': '76545899', 'reference': 'L402', 'sku': 'L402', 'gtin': '7899711605047', 'price': 50.0, 'price_compare': 50.0, 'active': True, 'balance': 4, 'attributes': [{'name': 'Opção', 'value': 'Padrão'}]}
+✅ 04:59:46 | BagyClient | 🧪 [TESTE-VAR] Variação 1: ID=76545899, SKU=L402
+✅ 04:59:46 | BagyClient | 🧪 [TESTE-VAR] Removendo campo 'attributes' da variação 1
+✅ 04:59:46 | BagyClient | 🧪 [TESTE-VAR] Removendo 1 variações do payload para criar primeiro o produto base
+✅ 04:59:46 | BagyClient | Produto criado com sucesso (ID: 8458002)
+✅ 04:59:46 | BagyClient | 🧪 [TESTE-VAR] Criando variação 1/1 para o produto 8458002
+❌ 04:59:47 | BagyClient | Response error 400: {"code":"color_attribute_already_exists","error":"Ocorreu um erro interno. Por favor, entre em contato com a nossa central de atendimento."}
+⚠️ 04:59:47 | BagyClient | Request failed: 400 Client Error: Bad Request for url: https://api.dooca.store/variations
+✅ 04:59:47 | BagyClient | Retrying in 30 seconds...
+❌ 05:00:18 | BagyClient | Response error 400: {"code":"color_attribute_already_exists","error":"Ocorreu um erro interno. Por favor, entre em contato com a nossa central de atendimento."}
+⚠️ 05:00:18 | BagyClient | Request failed: 400 Client Error: Bad Request for url: https://api.dooca.store/variations
+✅ 05:00:18 | BagyClient | Retrying in 60 seconds...

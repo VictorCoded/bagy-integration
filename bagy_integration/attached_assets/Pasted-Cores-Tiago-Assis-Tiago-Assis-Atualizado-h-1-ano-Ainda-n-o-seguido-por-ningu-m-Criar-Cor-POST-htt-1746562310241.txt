@@ -1,0 +1,131 @@
+Cores
+Tiago Assis
+Tiago Assis
+Atualizado há 1 ano
+Ainda não seguido por ninguém
+# Criar Cor
+POST https://api.dooca.store/colors
+
+ 
+
+Body
+{
+    "external_id": null,
+    "name": "Generic",
+    "hexadecimal": "#000000",
+    "image": null,
+    "position": 99,
+    "active": 1
+}
+ 
+
+Status: 201
+ 
+
+# Editar Cor
+PUT https://api.dooca.store/colors/:id
+
+Parâmetro: O ID da cor.
+
+A edição do registro pode ser parcial ou total.
+
+ 
+
+{
+    "name": "Generic edit"
+}
+ 
+
+Status: 200
+ 
+
+# Deletar Cor
+DELETE https://api.dooca.store/colors/:id
+
+Parâmetro: O ID da cor.
+
+ 
+
+Response: 204
+ 
+
+# Consultar Cor
+GET https://api.dooca.store/colors/:id
+
+Parâmetro: O ID da cor.
+
+ 
+
+HTTP STATUS: 200 OK
+{
+    "data": [
+        {
+            "id": 2492,
+            "external_id": null,
+            "name": "Generic",
+            "slug": "generic",
+            "hexadecimal": "#000000",
+            "image": null,
+            "position": 99,
+            "active": true,
+            "created_at": "2020-01-09 08:54:55",
+            "updated_at": "2020-01-09 08:54:55"
+        }
+    ],
+    "links": {
+        "first": "https://api/colors?page=1",
+        "last": "https://api/colors?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "path": "https://api/colors",
+        "per_page": 25,
+        "to": 1,
+        "total": 1
+    }
+}
+ 
+
+# Listar Cores
+GET https://api.dooca.store/colors
+
+ 
+
+HTTP STATUS: 200 OK
+
+
+{
+    "data": [
+        {
+            "id": 2492,
+            "external_id": null,
+            "name": "Generic",
+            "slug": "generic",
+            "hexadecimal": "#000000",
+            "image": null,
+            "position": 99,
+            "active": true,
+            "created_at": "2020-01-09 08:54:55",
+            "updated_at": "2020-01-09 08:54:55"
+        }
+    ],
+    "links": {
+        "first": "https://api/colors?page=1",
+        "last": "https://api/colors?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "path": "https://api/colors",
+        "per_page": 25,
+        "to": 1,
+        "total": 1
+    }
+}

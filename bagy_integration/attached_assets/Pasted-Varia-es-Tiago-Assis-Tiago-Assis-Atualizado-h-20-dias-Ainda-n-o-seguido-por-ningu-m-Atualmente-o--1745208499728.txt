@@ -1,0 +1,241 @@
+Variações
+Tiago Assis
+Tiago Assis
+Atualizado há 20 dias
+Ainda não seguido por ninguém
+Atualmente, o limite de variações é de 150 por produto.
+# Criar Variação
+POST https://api.dooca.store/variations
+
+ 
+
+Body
+{
+    "product_id": 1,
+    "color_id": "",
+    "color_secondary_id": "",
+    "attribute_value_id": "",
+    "external_id": "",
+    "reference": "referencia",
+    "sku": "",
+    "gtin": "",
+    "mpn": "",
+    "price": "",
+    "price_compare": "",
+    "additional_shipping_time": "",
+    "position": "",
+    "active": true,
+    "balance": ""
+}
+ 
+
+Status: 201
+ 
+
+# Editar Variação
+PUT https://api.dooca.store/variations/:id
+
+ 
+
+Parâmetro: O ID da Variação.
+
+A edição do registro pode ser parcial ou total.
+
+ 
+
+{
+    "id": 173,
+    "product_id": 163,
+    "color_id": 1,
+    "grid_id": "163-1",
+    "color_secondary_id": null,
+    "attribute_value_id": 1,
+    "attribute_value_secondary_id": null,
+    "external_id": null,
+    "reference": null,
+    "sku": null,
+    "gtin": "234234",
+    "mpn": "2342",
+    "price": "30.00",
+    "price_compare": null,
+    "additional_shipping_time": null,
+    "images": null,
+    "position": null,
+    "created_at": "2020-03-19 17:18:31",
+    "updated_at": "2020-03-23 14:07:45",
+    "active": true,
+    "balance": 0,
+    "reserved_balance": 0,
+    "color": {
+        "id": 1,
+        "external_id": null,
+        "name": "cor cinza",
+        "slug": "cor-cinza",
+        "hexadecimal": "#acadae",
+        "image": null,
+        "position": null,
+        "active": true,
+        "created_at": "2020-03-12 18:08:34",
+        "updated_at": "2020-03-12 18:08:34"
+    },
+    "attribute": {
+        "id": 1,
+        "attribute_id": 2,
+        "attribute_name": "peso",
+        "external_id": null,
+        "name": "2kg",
+        "slug": "2kg",
+        "position": 1,
+        "active": true,
+        "created_at": "2020-03-12 16:52:32",
+        "updated_at": "2020-03-12 16:52:32"
+    },
+    "attribute_secondary": null
+}
+ 
+
+Status: 200
+ 
+
+# Deletar Variação
+DELETE https://api.dooca.store/variations/:id
+
+Parâmetro: O ID da Variação.
+
+ 
+
+Response: 204
+ 
+
+# Consultar Variação
+GET https://api.dooca.store/variations/:id
+
+Parâmetro: O ID da Variação
+
+ 
+
+HTTP STATUS: 200 OK
+{
+    "id": 173,
+    "product_id": 163,
+    "color_id": 1,
+    "grid_id": "163-1",
+    "color_secondary_id": null,
+    "attribute_value_id": 1,
+    "attribute_value_secondary_id": null,
+    "external_id": null,
+    "reference": null,
+    "sku": null,
+    "gtin": "234234",
+    "mpn": "2342",
+    "price": "30.00",
+    "price_compare": null,
+    "additional_shipping_time": null,
+    "images": null,
+    "position": null,
+    "created_at": "2020-03-19 17:18:31",
+    "updated_at": "2020-03-23 14:07:45",
+    "active": true,
+    "balance": 0,
+    "reserved_balance": 0,
+    "color": {
+        "id": 1,
+        "external_id": null,
+        "name": "cor cinza",
+        "slug": "cor-cinza",
+        "hexadecimal": "#acadae",
+        "image": null,
+        "position": null,
+        "active": true,
+        "created_at": "2020-03-12 18:08:34",
+        "updated_at": "2020-03-12 18:08:34"
+    },
+    "attribute": {
+        "id": 1,
+        "attribute_id": 2,
+        "attribute_name": "peso",
+        "external_id": null,
+        "name": "2kg",
+        "slug": "2kg",
+        "position": 1,
+        "active": true,
+        "created_at": "2020-03-12 16:52:32",
+        "updated_at": "2020-03-12 16:52:32"
+    },
+    "attribute_secondary": null
+}
+ 
+
+# Listar Variações
+GET https://api.dooca.store/variations/:id
+
+ 
+
+HTTP STATUS: 200 OK
+[
+  {
+    "id": 173,
+    "product_id": 163,
+    "color_id": 1,
+    "grid_id": "163-1",
+    "color_secondary_id": null,
+    "attribute_value_id": 1,
+    "attribute_value_secondary_id": null,
+    "external_id": null,
+    "reference": null,
+    "sku": null,
+    "gtin": "234234",
+    "mpn": "2342",
+    "price": "30.00",
+    "price_compare": null,
+    "additional_shipping_time": null,
+    "images": null,
+    "position": null,
+    "created_at": "2020-03-19 17:18:31",
+    "updated_at": "2020-03-23 14:07:45",
+    "active": true,
+    "balance": 0,
+    "reserved_balance": 0,
+    "color": {
+        "id": 1,
+        "external_id": null,
+        "name": "cor cinza",
+        "slug": "cor-cinza",
+        "hexadecimal": "#acadae",
+        "image": null,
+        "position": null,
+        "active": true,
+        "created_at": "2020-03-12 18:08:34",
+        "updated_at": "2020-03-12 18:08:34"
+    },
+    "attribute": {
+        "id": 1,
+        "attribute_id": 2,
+        "attribute_name": "peso",
+        "external_id": null,
+        "name": "2kg",
+        "slug": "2kg",
+        "position": 1,
+        "active": true,
+        "created_at": "2020-03-12 16:52:32",
+        "updated_at": "2020-03-12 16:52:32"
+    },
+    "attribute_secondary": null
+  }
+],
+        "links": {
+        "first": "http://api.dooca.local/variations?page=1",
+        "last": "http://api.dooca.local/variations?page=170",
+        "prev": null,
+        "next": "http://api.dooca.local/variations?page=2"
+    },
+        "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "path": "http://api.dooca.local/variations",
+        "per_page": 25,
+        "to": 25,
+        "total": 1
+    }
+}

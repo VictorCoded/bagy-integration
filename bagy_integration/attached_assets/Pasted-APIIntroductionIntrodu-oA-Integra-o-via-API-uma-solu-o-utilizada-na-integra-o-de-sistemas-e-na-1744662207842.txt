@@ -1,0 +1,237 @@
+APIIntroductionIntroduçãoA Integração via API é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Desta forma é possível integrar nosso sistema com diversos outros aplicativos, sendo assim, os dados integrados ficaram na nuvem e você terá a possibilidade de alterar, selecionar e excluir quando quiser.AutenticaçãoPara que você possa acessar a API, você deve possui uma conta e gerar o código de Access Token e o Secret Access Token da aplicação que você usará. Você deverá enviar estas informações nos parâmetros HEADER toda vez que acessar uma URL da API. Exemplo de parametros de paginação&pagina=10&ordenacao=nome&direcao=descLimite de requisiçõesAs chamadas à nossa API são limitadas a no máximo 3 requisições por segundo e no máximo 30.000 requisições por dia. Esse limite é controlado por empresa.Caso seja ultrapassado o limite a requisição retornará o status 429 (too many requests) e a mensagem O limite de requisicoes foi atingido.Limites de registrosTodas as requisições GET são limitadas por página com no máximo 100 registros cada.Atribuição de usuárioPara clientes que possuem mais de um usuário cadastrado no sistema, deve se usar o campo usuario_id como parametro de atribuição. Caso este parametro não seja informado, a API irá priorizar o usuário master do sistema.
+Para conhecer os ids dos usuários, faça um GET em /api/usuarios/Atribuição de lojaPara clientes que possuem mais de uma loja cadastrada no sistema, deve se usar o campo loja_id no tipo de envio GET ou POST como parametro de atribuição. Caso este parametro não seja informado, a API irá priorizar a loja matriz ou a loja que o usuário tenha permissão de acesso.
+Para conhecer os ids das lojas, faça um GET em /api/lojas/
+Reference
+Clientes
+Listar
+Filtrostipo_pessoa (PF = pessoa física, PJ = pessoa jurídica, ES = Estrangeiro)nome (string)cpf_cnpj (string)telefone (string)email (string)situacao (1 = ativo, 0 = inativo)cidade_id (int)
+Para conhecer os ids das cidades, faça um GET em /api/cidades/estado (string)
+Ao buscar por estado utilizar as siglas(MG,SP,RJ,RR..)
+Cadastrar
+Campos obrigatóriostipo_pessoa (string) - PF, PJ ou ESnome (string)Atribuição de usuáriousuario_id
+Para conhecer os ids das usuários, faça um GET em /api/usuarios/
+Caso este parametro não seja informado, a API irá priorizar o usuário master do sistema.Atribuição de lojaloja_id
+Para conhecer os ids das lojas, faça um GET em /api/lojas/
+Caso este parametro não seja informado, a API irá priorizar a loja matriz ou a loja que o usuário tenha permissão de acesso.
+Visualizar
+Lista os dados de um cliente específico. Basta acrescentar o parametro com o id do cliente.
+Editar
+Campos obrigatóriostipo_pessoa (string) - PF, PJ ou ESnome (string)
+Deletar
+Exclui um cliente específico. Basta acrescentar o parametro com o id do cliente.Fornecedores
+Listar
+Filtrostipo_pessoa (PF = pessoa física, PJ = pessoa jurídica, ES = Estrangeiro)nome (string)cpf_cnpj (string)telefone (string)email (string)situacao (1 = ativo, 0 = inativo)cidade_id (int)
+Para conhecer os ids das cidades, faça um GET em /api/cidades/estado (string)
+Ao buscar por estado utilizar as siglas(MG,SP,RJ,RR..)
+Cadastrar
+Campos obrigatóriostipo_pessoa (string) - PF, PJ ou ESnome (string)
+Visualizar
+Lista os dados de um fornecedor específico. Basta acrescentar o parametro com o id do fornecedor.
+Editar
+Campos obrigatóriostipo_pessoa (string) - PF, PJ ou ESnome (string)
+Deletar
+Exclui um fornecedor específico. Basta acrescentar o parametro com o id do fornecedor.Funcionários
+Listar
+Filtrosnome (string)Transportadoras
+Listar
+Filtrostipo_pessoa (PF = pessoa física, PJ = pessoa jurídica)nome (string)telefone (string)email (string)
+Cadastrar
+Campos obrigatóriostipo_pessoa (string) - PF, PJnome (string)
+Visualizar
+Lista os dados de uma transportadora específica. Basta acrescentar o parametro com o id da transportadora.
+Editar
+Campos obrigatóriostipo_pessoa (string) - PF, PJnome (string)
+Deletar
+Exclui uma transportadora específica. Basta acrescentar o parametro com o id da transportadora.Tipos de contatos
+Listar
+Tipos de endereços
+Listar
+Estados
+Listar
+Cidades
+Listar
+Filtrosestado_id (int)
+Para conhecer os ids dos estados, faça um GET em /api/estados/Produtos
+Listar
+Filtrosloja_id (int) Para conhecer os ids das lojas, faça um GET em /api/lojas/nome (string)codigo (string)grupo_id (int)
+Para conhecer os ids dos grupos de produtos, faça um GET em /api/grupos_produtos/fornecedor_id (int)
+Para conhecer os ids dos fornecedores, faça um GET em /api/fornecedores/ativo (1 = sim, 0 = não)
+Cadastrar
+Campos obrigatóriosnome (string)codigo_interno (string)valor_custo (float)
+Visualizar
+Lista os dados de um produto específico. Basta acrescentar o parametro com o id do produto.
+Editar
+Campos obrigatóriosnome (string)codigo_interno (string)valor_custo (float)OrientaçõesPara definir os valores de venda por tipo, basta fornecer um array com os valores, incluindo os campos tipo_id e valor_venda. Se os dados de valores não forem informados, os valores de venda permanecerão inalterados.
+Deletar
+Grupos de produtos
+Listar
+Listagem dos grupos de produtosServiços
+Listar
+Filtrosloja_id (int) Para conhecer os ids das lojas, faça um GET em /api/lojas/nome (string)valor_inicio (float)valor_fim (float)
+Cadastrar
+Campos obrigatóriosnome (string)codigo (string)
+Visualizar
+Lista os dados de um serviço específico. Basta acrescentar o parametro com o id do serviço.
+Editar
+Campos obrigatóriosnome (string)codigo (string)
+Deletar
+Orçamentos
+Listar
+Filtrosloja_id (int) Para conhecer os ids das lojas, faça um GET em /api/lojas/tipo (tipo = produto, tipo = servico)codigo (int)nome (string)situacao_id (int)
+Para conhecer os ids das situações de orçamentos, faça um GET em /api/situacoes_orcamentos/data_inicio:
+Orçamentos que estão configurados com a data a partir do filtro especificado. A data deve estar no formato AAAA-MM-DD (ex: ?data_inicio=2020-01-01).data_fim:
+Orçamentos que estão configurados com a data a até do filtro especificado. A data deve estar no formato AAAA-MM-DD (ex: ?data_fim=2020-01-31).cliente_id (int)
+Para conhecer os ids dos clientes, faça um GET em /api/clientes/centro_custo_id (int)
+Para conhecer os ids dos centros de custos, faça um GET em /api/centros_custos/
+Cadastrar
+Campos obrigatóriostipo (tipo = produto, tipo = servico, caso não seja informado será passado tipo=produto)codigo (int)cliente_id (int)situacao_id (int)data (date)Informações adicionaisO campo condicao_pagamento deverá ser preenchido com os valores: 'a_vista' ou 'parcelado'.O campo tipo_desconto deverá ser preenchido com os valores: 'R$' ou '%'.Podem ser registrados dois tipos de orçamentos. Orçamentos de produtos e Orçamentos de serviços. Para isso basta especificar o campo tipo.Gerar parcelas automaticamentePara gerar parcelas automaticamente basta substituir o parametro pagamentos (array) pelos campos abaixo:forma_pagamento_id: (int) Obrigatório
+numero_parcelas: (int) Obrigatório
+intervalo_dias: (int) Opcional. Caso não seja informado irá considerar o intervalo de dias da forma_pagamento_id configurado no sistema.
+data_primeira_parcela: (date) Opcional. Caso não seja informado irá pegar a data do orçamento + dias da 1º parcela da forma_pagamento_id configurado no sistema.
+Visualizar
+Lista os dados de um orçamento específico. Basta acrescentar o parametro com o id da venda.
+Editar
+Campos obrigatóriostipo (tipo = produto, tipo = servico, caso não seja informado será passado tipo=produto)codigo (int)cliente_id (int)situacao_id (int)data (date)Informações adicionaisO campo condicao_pagamento deverá ser preenchido com os valores: 'a_vista' ou 'parcelado'.O campo tipo_desconto deverá ser preenchido com os valores: 'R$' ou '%'.
+Deletar
+Exclui um orçamento específico. Basta acrescentar o parametro com o id do orçamento.
+Gerar parcelas
+Campos obrigatórios:valor_total (float)forma_pagamento_id (int)numero_parcelas (int)Situações de orçamentosValores para o campo tipo_lancamento:
+
+0 = Não lança
+1 = Lança estoque e financeiro
+2 = Lança somente estoque
+3 = Lança somente financeiro
+Listar
+Vendas
+Listar
+Filtrosloja_id (int) Para conhecer os ids das lojas, faça um GET em /api/lojas/tipo (tipo = produto, tipo = servico, tipo = vendas_balcao)codigo (int)nome (string)situacao_id (int)
+Para conhecer os ids das situações de vendas, faça um GET em /api/situacoes_vendas/data_inicio:
+Vendas que estão configuradas com a data a partir do filtro especificado. A data deve estar no formato AAAA-MM-DD (ex: ?data_inicio=2020-01-01).data_fim:
+Vendas que estão configuradas com a data a até do filtro especificado. A data deve estar no formato AAAA-MM-DD (ex: ?data_fim=2020-01-31).cliente_id (int)
+Para conhecer os ids dos clientes, faça um GET em /api/clientes/centro_custo_id (int)
+Para conhecer os ids dos centros de custos, faça um GET em /api/centros_custos/
+Cadastrar
+Campos obrigatóriostipo (tipo = produto, tipo = servico, caso não seja informado será passado tipo=produto)codigo (int)cliente_id (int)situacao_id (int)data (date)Informações adicionaisO campo condicao_pagamento deverá ser preenchido com os valores: 'a_vista' ou 'parcelado'.O campo tipo_desconto deverá ser preenchido com os valores: 'R$' ou '%'.Podem ser registrados dois tipos de vendas. Vendas de produtos e Vendas de serviços. Para isso basta especificar o campo tipo.Gerar parcelas automaticamentePara gerar parcelas automaticamente basta substituir o parametro pagamentos (array) pelos campos abaixo:forma_pagamento_id: (int) Obrigatório
+numero_parcelas: (int) Obrigatório
+intervalo_dias: (int) Opcional. Caso não seja informado irá considerar o intervalo de dias da forma_pagamento_id configurado no sistema.
+data_primeira_parcela: (date) Opcional. Caso não seja informado irá pegar a data da venda + dias da 1º parcela da forma_pagamento_id configurado no sistema.
+plano_contas_id: (int) Opcional. Plano de contas.
+Visualizar
+Lista os dados de uma venda específica. Basta acrescentar o parametro com o id da venda.
+Editar
+Campos obrigatóriostipo (tipo = produto, tipo = servico, caso não seja informado será passado tipo=produto)codigo (int)cliente_id (int)situacao_id (int)data (date)Informações adicionaisO campo condicao_pagamento deverá ser preenchido com os valores: 'a_vista' ou 'parcelado'.O campo tipo_desconto deverá ser preenchido com os valores: 'R$' ou '%'.
+Deletar
+Exclui uma venda específica. Basta acrescentar o parametro com o id da venda.
+Gerar parcelas
+Campos obrigatórios:valor_total (float)forma_pagamento_id (int)numero_parcelas (int)Situações de vendasValores para o campo tipo_lancamento:
+
+0 = Não lança
+1 = Lança estoque e financeiro
+2 = Lança somente estoque
+3 = Lança somente financeiro
+Listar
+Ordens de serviços
+Listar
+Filtrosloja_id (int) Para conhecer os ids das lojas, faça um GET em /api/lojas/codigo (int)nome (string)situacao_id (int)
+Para conhecer os ids das situações de ordens de serviços, faça um GET em /api/situacoes_ordens_servicos/data_inicio:
+Ordens de serviços que estão configuradas com a data a partir do filtro especificado. A data deve estar no formato AAAA-MM-DD (ex: ?data_inicio=2020-01-01).data_fim:
+Ordens de serviços que estão configuradas com a data a até do filtro especificado. A data deve estar no formato AAAA-MM-DD (ex: ?data_fim=2020-01-31).cliente_id (int)
+Para conhecer os ids dos clientes, faça um GET em /api/clientes/centro_custo_id (int)
+Para conhecer os ids dos centros de custos, faça um GET em /api/centros_custos/
+Cadastrar
+Campos obrigatórioscodigo (int)cliente_id (int)situacao_id (int)data (date)Informações adicionaisO campo condicao_pagamento deverá ser preenchido com os valores: 'a_vista' ou 'parcelado'.O campo tipo_desconto deverá ser preenchido com os valores: 'R$' ou '%'.Gerar parcelas automaticamentePara gerar parcelas automaticamente basta substituir o parametro pagamentos (array) pelos campos abaixo:forma_pagamento_id: (int) Obrigatório
+numero_parcelas: (int) Obrigatório
+intervalo_dias: (int) Opcional. Caso não seja informado irá considerar o intervalo de dias da forma_pagamento_id configurado no sistema.
+data_primeira_parcela: (date) Opcional. Caso não seja informado irá pegar a data da OS + dias da 1º parcela da forma_pagamento_id configurado no sistema.
+Visualizar
+Lista os dados de uma venda específica. Basta acrescentar o parametro com o id da venda.
+Editar
+Campos obrigatóriostipo (tipo = produto, tipo = servico, caso não seja informado será passado tipo=produto)codigo (int)cliente_id (int)situacao_id (int)data (date)Informações adicionaisO campo condicao_pagamento deverá ser preenchido com os valores: 'a_vista' ou 'parcelado'.O campo tipo_desconto deverá ser preenchido com os valores: 'R$' ou '%'.
+Deletar
+Exclui uma OS específica. Basta acrescentar o parametro com o id da OS.
+Gerar parcelas
+Campos obrigatórios:valor_total (float)forma_pagamento_id (int)numero_parcelas (int)Situações de OS
+Listar
+Compras
+Listar
+Filtrosloja_id (int) Para conhecer os ids das lojas, faça um GET em /api/lojas/codigo (int)situacao_id (int)
+Para conhecer os ids das situações de compras, faça um GET em /api/situacoes_compras/fornecedor_id (int)
+Para conhecer os ids dos fornecedores, faça um GET em /api/fornecedores/centro_custo_id (int)
+Para conhecer os ids dos centros de custos, faça um GET em /api/centros_custos/
+Cadastrar
+Campos obrigatórioscodigo (int)fornecedor_id (int)situacao_id (int)data (date)Gerar parcelas automaticamentePara gerar parcelas automaticamente basta substituir o parametro pagamentos (array) pelos campos abaixo:forma_pagamento_id: (int) Obrigatório
+numero_parcelas: (int) Obrigatório
+intervalo_dias: (int) Opcional. Caso não seja informado irá considerar o intervalo de dias da forma_pagamento_id configurado no sistema.
+data_primeira_parcela: (date) Opcional. Caso não seja informado irá pegar a data da compra + Dias da 1º Parcela da forma_pagamento_id configurado no sistema.
+plano_contas_id: (int) Opcional. Plano de contas.
+Visualizar
+Lista os dados de uma compra específica. Basta acrescentar o parametro com o id da compra.
+Editar
+Campos obrigatórioscodigo (int)fornecedor_id (int)situacao_id (int)data (date)
+Deletar
+Exclui uma compra específica. Basta acrescentar o parametro com o id da compra.
+Gerar parcelas
+Campos obrigatórios:valor_total (float)numero_parcelas (int)Situações de comprasValores para o campo tipo_lancamento:
+
+0 = Não lança
+1 = Lança estoque e financeiro
+2 = Lança somente estoque
+3 = Lança somente financeiro
+Listar
+Pagamentos
+Listar
+Filtrosloja_id (int) Para conhecer os ids das lojas, faça um GET em /api/lojas/codigo (int)nome (string)cliente_id (int)
+Para conhecer os ids dos clientes, faça um GET em /api/clientes/fornecedor_id (int)
+Para conhecer os ids dos fornecedores, faça um GET em /api/fornecedores/transportadora_id (int)
+Para conhecer os ids das transportadoras, faça um GET em /api/transportadoras/funcionario_id (int)
+Para conhecer os ids dos funcionarios, faça um GET em /api/funcionarios/data_inicio (string)data_fim (string)valor_inicio (float)valor_fim (float)liquidado (ab = Em aberto, at = Em atraso, pg = Confirmado)plano_contas_id (int)
+Para conhecer os ids dos planos de contas, faça um GET em /api/planos_contas/centro_custo_id (int)
+Para conhecer os ids dos centros de custos, faça um GET em /api/centros_custos/conta_bancaria_id (int)
+Para conhecer os ids das contas bancárias, faça um GET em /api/contas_bancarias/forma_pagamento_id (int)
+Para conhecer os ids das formas de pagamentos, faça um GET em /api/formas_pagamentos/
+Cadastrar
+Campos obrigatóriosdescricao (string)data_vencimento (date)plano_contas_id (int)forma_pagamento_id (int)conta_bancaria_id (int)valor (float)data_competencia (date)Ao cadastrar é retornado o campo valor_total (valor + juros - desconto)
+Visualizar
+Lista os dados de um pagamento específico. Basta acrescentar o parametro com o id do pagamento.
+Editar
+Campos obrigatóriosdescricao (string)data_vencimento (date)plano_contas_id (int)forma_pagamento_id (int)conta_bancaria_id (int)valor (float)data_competencia (date)Ao cadastrar é retornado o campo valor_total (valor + juros - desconto)
+Deletar
+Exclui um pagamento específico. Basta acrescentar o parametro com o id do pagamento.Recebimentos
+Listar
+Filtrosloja_id (int) Para conhecer os ids das lojas, faça um GET em /api/lojas/codigo (int)nome (string)cliente_id (int)
+Para conhecer os ids dos clientes, faça um GET em /api/clientes/fornecedor_id (int)
+Para conhecer os ids dos fornecedores, faça um GET em /api/fornecedores/transportadora_id (int)
+Para conhecer os ids das transportadoras, faça um GET em /api/transportadoras/funcionario_id (int)
+Para conhecer os ids dos funcionarios, faça um GET em /api/funcionarios/data_inicio (string)data_fim (string)valor_inicio (float)valor_fim (float)liquidado (ab = Em aberto, at = Em atraso, pg = Confirmado)plano_contas_id (int)
+Para conhecer os ids dos planos de contas, faça um GET em /api/planos_contas/centro_custo_id (int)
+Para conhecer os ids dos centros de custos, faça um GET em /api/centros_custos/conta_bancaria_id (int)
+Para conhecer os ids das contas bancárias, faça um GET em /api/contas_bancarias/forma_pagamento_id (int)
+Para conhecer os ids das formas de pagamentos, faça um GET em /api/formas_pagamentos/limit (int)
+Limite de resultados por página.
+Cadastrar
+Campos obrigatóriosdescricao (string)data_vencimento (date)plano_contas_id (int)forma_pagamento_id (int)conta_bancaria_id (int)valor (float)data_competencia (date)
+Visualizar
+Lista os dados de um recebimento específico. Basta acrescentar o parametro com o id do recebimento.
+Editar
+Campos obrigatóriosdescricao (string)data_vencimento (date)plano_contas_id (int)forma_pagamento_id (int)conta_bancaria_id (int)valor (float)data_competencia (date)
+Deletar
+Exclui um recebimento específico. Basta acrescentar o parametro com o id do recebimento.Formas pagamentos
+Listar
+Listagem de formas de pagamentosContas bancárias
+Listar
+Listagem de contas bancáriasPlanos de contas
+Listar
+Filtrostipo (D = Débito, C = Crédito)Centros de custos
+Listar
+Listagem dos centros de custosUsuários
+Listar
+Lojas
+Listar
+Campos Extras CadastrosCampos extras para clientes, fornecedores e funcionários.
+Listar
+Adicionar
+Campos obrigatóriosnome (string)tipo (string) Tipos permitidos: cpf, cnpj, check_list, data, numeros, texto_simples.opcoes* (array) Obrigatório nos campos extras do tipo "check_list"
+Editar
+Campos obrigatóriosnome (string)tipo (string) Tipos permitidos: cpf, cnpj, check_list, data, numeros, texto_simples.opcoes* (array) Obrigatório nos campos extras do tipo "check_list"
+Visualizar
+Deletar

@@ -1,0 +1,187 @@
+Vendas/CadastrarPOSThttps://api.beteltecnologia.com/vendasRequest
+Headers
+Content-Type:application/json
+access-token:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+secret-access-token:YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+Body
+{
+  "tipo": "produto",
+  "cliente_id": "1",
+  "vendedor_id": "45",
+  "data": "2020-01-27",
+  "prazo_entrega": "2019-12-06",
+  "situacao_id": "3150",
+  "nome_situacao": "Confirmado",
+  "transportadora_id": "",
+  "centro_custo_id": "1",
+  "valor_frete": "0.00",
+  "condicao_pagamento": "parcelado",
+  "pagamentos": [
+    {
+      "pagamento": {
+        "data_vencimento": "2020-01-27",
+        "valor": "25",
+        "forma_pagamento_id": "640517",
+        "nome_forma_pagamento": "Dinheiro à Vista  ",
+        "plano_contas_id": "2514",
+        "nome_plano_conta": "Prestações de serviçosAC",
+        "observacao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    },
+    {
+      "pagamento": {
+        "data_vencimento": "2020-02-27",
+        "valor": "35",
+        "forma_pagamento_id": "640517",
+        "nome_forma_pagamento": "Dinheiro à Vista  ",
+        "plano_contas_id": "2514",
+        "nome_plano_conta": "Prestações de serviçosAC",
+        "observacao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    }
+  ],
+  "produtos": [
+    {
+      "produto": {
+        "produto_id": "22",
+        "variacao_id": "1246454",
+        "detalhes": "Lorem Ipsum is simply dummy text of the",
+        "quantidade": "1",
+        "valor_venda": "60.00",
+        "tipo_desconto": "R$",
+        "desconto_valor": "0.00",
+        "desconto_porcentagem": "0.00"
+      }
+    }
+  ],
+  "servicos": [
+    {
+      "servico": {
+        "id": "351",
+        "servico_id": "437",
+        "nome_servico": "Teste 01",
+        "detalhes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "sigla_unidade": null,
+        "quantidade": "1",
+        "tipo_valor_id": null,
+        "nome_tipo_valor": null,
+        "valor_venda": 60,
+        "tipo_desconto": "R$",
+        "desconto_valor": "0",
+        "desconto_porcentagem": "0"
+      }
+    }
+  ]
+}
+Response
+200
+Headers
+Content-Type:application/json
+Body
+{
+  "code": 200,
+  "status": "success",
+  "data": {
+    "id": "515",
+    "codigo": "797",
+    "cliente_id": "1",
+    "nome_cliente": "Ronei Marcos Silva Marques",
+    "vendedor_id": "45",
+    "nome_vendedor": "João da Silva",
+    "tecnico_id": null,
+    "nome_tecnico": null,
+    "data": "2020-01-27",
+    "previsao_entrega": null,
+    "situacao_id": "3150",
+    "nome_situacao": "Confirmado",
+    "valor_total": "60.00",
+    "transportadora_id": null,
+    "nome_transportadora": null,
+    "centro_custo_id": "1",
+    "nome_centro_custo": "Centro de Custo 01",
+    "aos_cuidados_de": null,
+    "validade": null,
+    "introducao": null,
+    "observacoes": null,
+    "observacoes_interna": null,
+    "valor_frete": "0.00",
+    "nome_canal_venda": "Kautrite III",
+    "nome_loja": "Savassi",
+    "valor_custo": "0.00",
+    "condicao_pagamento": "parcelado",
+    "situacao_financeiro": "0",
+    "situacao_estoque": "0",
+    "forma_pagamento_id": "640517",
+    "data_primeira_parcela": "2020-01-27",
+    "numero_parcelas": "2",
+    "intervalo_dias": "30",
+    "hash": "wpQseRf",
+    "equipamentos": [],
+    "pagamentos": [
+      {
+        "pagamento": {
+          "data_vencimento": "2020-01-27",
+          "valor": "25.00",
+          "forma_pagamento_id": "640517",
+          "nome_forma_pagamento": "Dinheiro à Vista",
+          "plano_contas_id": "2514",
+          "nome_plano_conta": "Prestações de serviçosAC",
+          "observacao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        }
+      },
+      {
+        "pagamento": {
+          "data_vencimento": "2020-02-27",
+          "valor": "35.00",
+          "forma_pagamento_id": "640517",
+          "nome_forma_pagamento": "Dinheiro à Vista",
+          "plano_contas_id": "2514",
+          "nome_plano_conta": "Prestações de serviçosAC",
+          "observacao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        }
+      }
+    ],
+    "produtos": [
+      {
+        "produto": {
+          "produto_id": 1238787,
+          "variacao_id": 4152212,
+          "nome_produto": "Televisão Smart TV - Plasma 52 P",
+          "detalhes": "Lorem Ipsum is simply dummy text of the",
+          "movimenta_estoque": "1",
+          "possui_variacao": "0",
+          "sigla_unidade": "UND",
+          "quantidade": "1.00",
+          "tipo_valor_id": "90858",
+          "nome_tipo_valor": "Atacado",
+          "valor_custo": "700.62",
+          "valor_venda": "60.00",
+          "tipo_desconto": "R$",
+          "desconto_valor": "0.00",
+          "desconto_porcentagem": "0.00",
+          "valor_total": "60.00"
+        }
+      }
+    ],
+    "servicos": [
+      {
+        "servico": {
+          "id": "351",
+          "servico_id": "437",
+          "nome_servico": "Serviço 01",
+          "detalhes": "",
+          "sigla_unidade": null,
+          "quantidade": "1.00",
+          "tipo_valor_id": null,
+          "nome_tipo_valor": null,
+          "valor_custo": "0.0000",
+          "valor_venda": "25.0000",
+          "tipo_desconto": "%",
+          "desconto_valor": null,
+          "desconto_porcentagem": "5.0000",
+          "valor_total": "23.75"
+        }
+      }
+    ]
+  }
+}

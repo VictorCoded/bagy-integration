@@ -1,0 +1,56 @@
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto ZD033 VIBRADOR (ID: 47433768) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: VIBRADOR CASAL BI-014582HP - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto VIBRADOR CASAL BI-014582HP (ID: 47433767) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: Vibrador Ponto G Recarregavel  - XUANAI - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto Vibrador Ponto G Recarregavel  - XUANAI (ID: 47433766) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: VIBRADOR DE SILICONE - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto VIBRADOR DE SILICONE (ID: 47433765) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: PLUG ANAL DE VIDRO COM CHICOTE - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto PLUG ANAL DE VIDRO COM CHICOTE (ID: 47433764) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: VIBRADOR COM APLICATIVO TD018B-ROXO - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto VIBRADOR COM APLICATIVO TD018B-ROXO (ID: 47433763) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: VIBRADOR PONTO G COM ESTIMULDAOR DE CLITORIS E ANUS - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto VIBRADOR PONTO G COM ESTIMULDAOR DE CLITORIS E ANUS (ID: 47433762) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 🥚 Produto EGG encontrado: VIBRADOR EGG LINGUA (ID: 47433761)
+✅ 04:22:05 | BidirectionalSynchronizer | 🥚 Possui variação marcada: 0
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: VIBRADOR EGG LINGUA - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto VIBRADOR EGG LINGUA (ID: 47433761) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 🥚 Produto EGG encontrado: VIBRADOR EGG LINGUA - PRETO (ID: 47433760)
+✅ 04:22:05 | BidirectionalSynchronizer | 🥚 Possui variação marcada: 0
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: VIBRADOR EGG LINGUA - PRETO - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto VIBRADOR EGG LINGUA - PRETO (ID: 47433760) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: PLUG DE SILICONE FORMATO DE CORACAO TAMANHO P - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto PLUG DE SILICONE FORMATO DE CORACAO TAMANHO P (ID: 47433759) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: PLUG DE SILICONE FORMATO DE CORACAO TAMANHO P - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto PLUG DE SILICONE FORMATO DE CORACAO TAMANHO P (ID: 47433758) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 📋 Produto incompleto registrado: PLUG DE SILICONE FORMATO DE CORACAO TAMANHO P - Campos faltantes: descrição
+⚠️ 04:22:05 | BidirectionalSynchronizer | ❌ Produto PLUG DE SILICONE FORMATO DE CORACAO TAMANHO P (ID: 47433757) não pode ser sincronizado. Campo crítico faltando: descrição
+✅ 04:22:05 | BidirectionalSynchronizer | 🛒 Produto com variações: Egg Masturbador Masculino (ID: 47433753)
+✅ 04:22:05 | BidirectionalSynchronizer | 🛒 Número de variações: 7
+✅ 04:22:05 | BidirectionalSynchronizer | 🥚 Produto EGG encontrado: Egg Masturbador Masculino (ID: 47433753)
+✅ 04:22:05 | BidirectionalSynchronizer | 🥚 Possui variação marcada: 1
+✅ 04:22:05 | ProductConverter | 🔍 Produto Egg Masturbador Masculino (ID: 47433753) tem variações: possui_variacao=True
+✅ 04:22:05 | ProductConverter | 🔍 Produto complexo: Egg Masturbador Masculino (ID: 47433753) com 7 variações
+✅ 04:22:05 | ProductConverter |   - Amostra variação 1: SPIDER (ID: 128704549, Código: EGG0001)
+✅ 04:22:05 | ProductConverter |   - Amostra variação 2: SILKY (ID: 128704550, Código: EGG0002)
+✅ 04:22:05 | ProductConverter |   - Amostra variação 3: STEPPER (ID: 128704551, Código: EGG0003)
+✅ 04:22:05 | ProductConverter |   - ... e mais 4 variações
+✅ 04:22:05 | ProductConverter | 📋 Processando 7 variações para o produto Egg Masturbador Masculino
+✅ 04:22:05 | ProductConverter |   - Preparando variação SPIDER: código original='EGG0001' => sku='EGG0001', estoque=25
+✅ 04:22:05 | ProductConverter |   - Preparando variação SILKY: código original='EGG0002' => sku='EGG0002', estoque=27
+✅ 04:22:05 | ProductConverter |   - Preparando variação STEPPER: código original='EGG0003' => sku='EGG0003', estoque=28
+✅ 04:22:05 | ProductConverter |   - Preparando variação CLICKER: código original='EGG0004' => sku='EGG0004', estoque=26
+✅ 04:22:05 | ProductConverter |   - Preparando variação TWISTER: código original='EGG0005' => sku='EGG0005', estoque=28
+✅ 04:22:05 | ProductConverter |   - Preparando variação WAVY: código original='EGG0006' => sku='EGG0006', estoque=25
+✅ 04:22:05 | ProductConverter |   - Preparando variação CAIXA C/ 6 UNI: código original='EGG0007' => sku='EGG0007', estoque=8
+✅ 04:22:06 | BidirectionalSynchronizer | 📦 Criando novo produto 47433753 no Bagy
+✅ 04:22:06 | BagyClient | Creating new product in Bagy: Egg Masturbador Masculino
+✅ 04:22:06 | BagyClient | Buscando produto com external_id: 47433753
+✅ 04:22:06 | BagyClient | Fazendo busca exaustiva por produto com external_id: 47433753
+⚠️ 04:22:08 | BagyClient | Produto não encontrado com external_id: 47433753 após busca exaustiva
+✅ 04:22:08 | BagyClient | Produto contém 7 variações que serão criadas automaticamente
+❌ 04:22:09 | BagyClient | Response error 400: {"code":"color_attribute_already_exists","error":"Ocorreu um erro interno. Por favor, entre em contato com a nossa central de atendimento."}
+⚠️ 04:22:09 | BagyClient | Request failed: 400 Client Error: Bad Request for url: https://api.dooca.store/products
+✅ 04:22:09 | BagyClient | Retrying in 30 seconds...
+❌ 04:22:39 | BagyClient | Response error 422: {"external_id":["validation.unique_custom"],"variations.0.external_id":["validation.unique_custom"]}
+⚠️ 04:22:39 | BagyClient | Request failed: 422 Client Error: Unprocessable Entity for url: https://api.dooca.store/products

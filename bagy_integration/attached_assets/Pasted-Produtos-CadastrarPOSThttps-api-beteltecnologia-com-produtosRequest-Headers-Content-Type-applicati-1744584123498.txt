@@ -1,0 +1,133 @@
+Produtos/CadastrarPOSThttps://api.beteltecnologia.com/produtosRequest
+Headers
+Content-Type:application/json
+access-token:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+secret-access-token:YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+Body
+{
+  "nome": "Televisão Smart TV - LED 32",
+  "codigo_interno": "32355564390",
+  "codigo_barra": "98412200100",
+  "largura": "80",
+  "altura": "50",
+  "comprimento": "8",
+  "ativo": "1",
+  "grupo_id": "803218",
+  "nome_grupo": "Eletrônicos",
+  "descricao": "Televisão Smart TV com wi-fi 32 Polegadas",
+  "estoque": "10",
+  "valor_custo": "700.62",
+  "valor_venda": "850.99",
+  "ncm": "11010010",
+  "cest": "0100200",
+  "peso_liquido": "1,000",
+  "peso_bruto": "1,550",
+  "valor_aproximado_tributos": "1,00",
+  "valor_fixo_pis": "1,0000",
+  "valor_fixo_pis_st": "3.00",
+  "valor_fixo_confins": "4.00",
+  "valor_fixo_confins_st": "6.00",
+  "fornecedores": [
+    {
+      "fornecedor_id": "241"
+    },
+    {
+      "fornecedor_id": "169"
+    }
+  ]
+}
+Response
+200
+Headers
+Content-Type:application/json
+Body
+{
+    "code": 200,
+    "status": "success",
+    "data": {
+        "id": "43",
+        "nome": "Televisão Smart TV - LED 32",
+        "codigo_interno": "32355564390",
+        "codigo_barra": "98412200100",
+        "possui_variacao": "0",
+        "possui_composicao": "0",
+        "movimenta_estoque": "1",
+        "peso": null,
+        "largura": "80.000",
+        "altura": "50.000",
+        "comprimento": "8.000",
+        "ativo": "1",
+        "grupo_id": "803218",
+        "nome_grupo": "Eletrônicos",
+        "descricao": "Televisão Smart TV com wi-fi 32 Polegadas",
+        "estoque": 10,
+        "valor_custo": "700.62",
+        "valor_venda": "850.99",
+        "valores": [
+            {
+                "tipo_id": "90858",
+                "nome_tipo": "Atacado",
+                "lucro_utilizado": "21.46",
+                "valor_custo": "750.99"
+                "valor_venda": "850.99"
+            },
+            {
+                "tipo_id": "90856",
+                "nome_tipo": "Varejo",
+                "lucro_utilizado": "21.46",
+                "valor_custo": "750.99"
+                "valor_venda": "850.99"
+            },
+            {
+                "tipo_id": "90853",
+                "nome_tipo": "Loja virtual",
+                "lucro_utilizado": "21.46",
+                "valor_custo": "750.99"
+                "valor_venda": "850.99"
+            }
+        ],
+        "variacoes": [
+            {
+                "variacao": {
+                    "id": "231",
+                    "nome": "",
+                    "estoque": "10.00",
+                    "valores": [
+                        {
+                            "tipo_id": "90858",
+                            "nome_tipo": "Atacado",
+                            "lucro_utilizado": "21.46",
+                            "valor_custo": "750.99"
+                            "valor_venda": "850.99"
+                        },
+                        {
+                            "tipo_id": "90856",
+                            "nome_tipo": "Varejo",
+                            "lucro_utilizado": "21.46",
+                            "valor_custo": "750.99"
+                            "valor_venda": "850.99"
+                        },
+                        {
+                            "tipo_id": "90853",
+                            "nome_tipo": "Loja virtual",
+                            "lucro_utilizado": "21.46",
+                            "valor_custo": "750.99"
+                            "valor_venda": "850.99"
+                        }
+                    ],
+                }
+            }
+        ],
+        "fiscal": {
+            "ncm": "11010010",
+            "cest": "0100200",
+            "peso_liquido": "1.000",
+            "peso_bruto": "1.000",
+            "valor_aproximado_tributos": "1.00",
+            "valor_fixo_pis": "1.00",
+            "valor_fixo_pis_st": "3.00",
+            "valor_fixo_confins": "4.00",
+            "valor_fixo_confins_st": "6.00"
+        }
+    }
+}

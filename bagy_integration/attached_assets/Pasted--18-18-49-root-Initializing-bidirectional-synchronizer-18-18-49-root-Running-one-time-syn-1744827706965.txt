@@ -1,0 +1,489 @@
+✅ 18:18:49 | root | Initializing bidirectional synchronizer
+✅ 18:18:49 | root | Running one-time synchronization
+✅ 18:18:49 | root | Synchronizing all entities bidirectionally
+✅ 18:18:49 | BidirectionalSynchronizer | 🔄 Iniciando sincronização bidirecional completa em 2025-04-16T18:18:49.279071
+✅ 18:18:49 | BidirectionalSynchronizer | 📦 Iniciando sincronização de produtos do GestãoClick para Bagy...
+✅ 18:18:49 | BidirectionalSynchronizer | 🔄 Iniciando sincronização de produtos do GestãoClick para Bagy
+✅ 18:18:49 | BidirectionalSynchronizer | 📋 Buscando catálogo de produtos do GestãoClick...
+✅ 18:18:49 | GestaoClickClient | Fetching products from GestãoClick (page 1, limit 100)
+✅ 18:18:50 | GestaoClickClient | Fetching products from GestãoClick (page 2, limit 100)
+✅ 18:18:51 | GestaoClickClient | Fetching products from GestãoClick (page 3, limit 100)
+✅ 18:18:52 | GestaoClickClient | Fetching products from GestãoClick (page 4, limit 100)
+✅ 18:18:53 | GestaoClickClient | Fetching products from GestãoClick (page 5, limit 100)
+✅ 18:18:54 | GestaoClickClient | Fetching products from GestãoClick (page 6, limit 100)
+✅ 18:18:55 | GestaoClickClient | Fetching products from GestãoClick (page 7, limit 100)
+✅ 18:18:56 | GestaoClickClient | Fetching products from GestãoClick (page 8, limit 100)
+✅ 18:18:57 | GestaoClickClient | Fetching products from GestãoClick (page 9, limit 100)
+✅ 18:18:59 | GestaoClickClient | Fetching products from GestãoClick (page 10, limit 100)
+✅ 18:19:00 | GestaoClickClient | Fetching products from GestãoClick (page 11, limit 100)
+✅ 18:19:01 | GestaoClickClient | Fetching products from GestãoClick (page 12, limit 100)
+✅ 18:19:02 | GestaoClickClient | Fetching products from GestãoClick (page 13, limit 100)
+✅ 18:19:03 | GestaoClickClient | Fetching products from GestãoClick (page 14, limit 100)
+✅ 18:19:04 | GestaoClickClient | Fetching products from GestãoClick (page 15, limit 100)
+✅ 18:19:05 | GestaoClickClient | Fetching products from GestãoClick (page 16, limit 100)
+✅ 18:19:06 | GestaoClickClient | Fetching products from GestãoClick (page 17, limit 100)
+✅ 18:19:08 | GestaoClickClient | Fetching products from GestãoClick (page 18, limit 100)
+✅ 18:19:09 | GestaoClickClient | Fetching products from GestãoClick (page 19, limit 100)
+✅ 18:19:10 | GestaoClickClient | Fetching products from GestãoClick (page 20, limit 100)
+✅ 18:19:11 | GestaoClickClient | Fetching products from GestãoClick (page 21, limit 100)
+✅ 18:19:12 | Pagination | Atingido o limite de páginas da API GestãoClick (21/21)
+✅ 18:19:12 | Pagination | Recuperado um total de 2000 itens de 21 páginas
+✅ 18:19:12 | BidirectionalSynchronizer | 📦 Found 2000 products in GestãoClick
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 76455796 (VIBRE DOCE D LEITE GEL DE MASSAGEM ELETRIZANTE 15G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto VIBRE DOCE D LEITE GEL DE MASSAGEM ELETRIZANTE 15G (ID: 76455796) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 76455542 (VIBRE UVA GEL DE MASSAGEM ELETRIZANTE 15G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto VIBRE UVA GEL DE MASSAGEM ELETRIZANTE 15G (ID: 76455542) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 76367303 (CLAREADOR 50ML DS) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CLAREADOR 50ML DS (ID: 76367303) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 76351353 (Cápsula vibratória recarregável.) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Cápsula vibratória recarregável. (ID: 76351353) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 76325437 (ESFOLIANTE SWEET GIRL MORANGO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ESFOLIANTE SWEET GIRL MORANGO (ID: 76325437) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 76269471 (ESFOLIANTE SWEET GIRL CHICLETE) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ESFOLIANTE SWEET GIRL CHICLETE (ID: 76269471) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 76269411 (ESFOLIANTE SWEET GIRL CITRUS) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ESFOLIANTE SWEET GIRL CITRUS (ID: 76269411) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 76123846 (BRUMA 120ML DS) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BRUMA 120ML DS (ID: 76123846) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 76123845 (VIBRATION AMORA POWER) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto VIBRATION AMORA POWER (ID: 76123845) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 76123844 (OOH DELICIA CALDA PULSANTE AMORA) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto OOH DELICIA CALDA PULSANTE AMORA (ID: 76123844) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75990116 (PROTESE MACICA ROSA 15X5) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PROTESE MACICA ROSA 15X5 (ID: 75990116) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75990113 (HOT BALL 50 TONS - LIBERDADE.  Lotes:30534 Qtd.: 50,000,) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL 50 TONS - LIBERDADE.  Lotes:30534 Qtd.: 50,000, (ID: 75990113) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75990112 (DELIRIUM GEL UMECTANTE CORPORAL 25G.  Lotes:30788 Qtd.: 50,000,) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto DELIRIUM GEL UMECTANTE CORPORAL 25G.  Lotes:30788 Qtd.: 50,000, (ID: 75990112) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75933163 (SACHE SEDENTÃO 3G) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SACHE SEDENTÃO 3G (ID: 75933163) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75930088 (Anel Peniano c vibro clitoris e anus) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Anel Peniano c vibro clitoris e anus (ID: 75930088) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75883426 (PA - (FS) Jatos Ingula 15ml - Uva) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PA - (FS) Jatos Ingula 15ml - Uva (ID: 75883426) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75883400 (PA - (FS) Jatos Ingula 15ml - Cereja) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PA - (FS) Jatos Ingula 15ml - Cereja (ID: 75883400) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75845448 (PA - (FS) Rala e Rola 150ml - Black Ice) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PA - (FS) Rala e Rola 150ml - Black Ice (ID: 75845448) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75845447 (PA - (FS) Rala e Rola 150ml - Algodao Doce) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PA - (FS) Rala e Rola 150ml - Algodao Doce (ID: 75845447) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75845446 (PA - (FS) Jatos Ingula 15ml - Morango com Champanhe) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PA - (FS) Jatos Ingula 15ml - Morango com Champanhe (ID: 75845446) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75845444 (PA - (FS) Jatos Ingula 15ml -  Leite Condensado) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PA - (FS) Jatos Ingula 15ml -  Leite Condensado (ID: 75845444) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75845443 (PA - (FS) Cream Lub 4g - Skenta Sfria) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PA - (FS) Cream Lub 4g - Skenta Sfria (ID: 75845443) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75845441 (PA - (FS) Bisnaga 18g - Xana Hot Crazy) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PA - (FS) Bisnaga 18g - Xana Hot Crazy (ID: 75845441) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75845434 (PA - (FS) Bisnaga 18g - 100 Dor) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PA - (FS) Bisnaga 18g - 100 Dor (ID: 75845434) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75281739 (SEDENTA POR GEMIDO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SEDENTA POR GEMIDO (ID: 75281739) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75281706 (SEDENTA SAFADA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SEDENTA SAFADA (ID: 75281706) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75281670 (SEDENTA POR TZÃO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SEDENTA POR TZÃO (ID: 75281670) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75212536 (Calcinha Frase Placa Sex Fire) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Calcinha Frase Placa Sex Fire (ID: 75212536) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 75154781 (CONJUNTO AMOR) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CONJUNTO AMOR (ID: 75154781) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73803658 (LAP GOTAS  NUEVAS 4G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP GOTAS  NUEVAS 4G (ID: 73803658) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73803619 (LAP GOTAS  TIEMPO 4G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP GOTAS  TIEMPO 4G (ID: 73803619) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73803566 (LAP POMADA HUO BING ORIENTAL 4G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP POMADA HUO BING ORIENTAL 4G (ID: 73803566) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73776119 (GEL HIDRATANTE VIRILHA  CITRUS) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL HIDRATANTE VIRILHA  CITRUS (ID: 73776119) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73776005 (GEL HIDRATANTE VIRILHA AMORA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL HIDRATANTE VIRILHA AMORA (ID: 73776005) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73766466 (CONJUNTO POLIAMIDA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CONJUNTO POLIAMIDA (ID: 73766466) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73583991 (Calcinha Passa Fita) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Calcinha Passa Fita (ID: 73583991) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73442183 (CALESSON FIO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CALESSON FIO (ID: 73442183) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73442027 (CALESSON GRANDE) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CALESSON GRANDE (ID: 73442027) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73391127 (LOVE ICE OLEO BEIJAVEL MENTA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LOVE ICE OLEO BEIJAVEL MENTA (ID: 73391127) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73339870 (Pênis Realístico com Ventosa, Possui Glande e Veias Salientes -TRANSPICUOUS DILDO) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Pênis Realístico com Ventosa, Possui Glande e Veias Salientes -TRANSPICUOUS DILDO (ID: 73339870) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73323078 (LAP GOTAS HUO BING 4G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP GOTAS HUO BING 4G (ID: 73323078) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73323069 (L017 LAP POMADA TIEMPO 4G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto L017 LAP POMADA TIEMPO 4G (ID: 73323069) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73323065 (L014 LAP POMADA CALIENTE 4G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto L014 LAP POMADA CALIENTE 4G (ID: 73323065) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73323059 (L016 LAP POMADA SUAVE 4G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto L016 LAP POMADA SUAVE 4G (ID: 73323059) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73323050 (L015 LAP POMADA NUEVA 4G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto L015 LAP POMADA NUEVA 4G (ID: 73323050) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73322974 (L718 Desodorante Intimo Rainbow Essence 166ml) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto L718 Desodorante Intimo Rainbow Essence 166ml (ID: 73322974) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73322825 (LAP SPRAY NUEVA  20ml) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP SPRAY NUEVA  20ml (ID: 73322825) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73322817 (LAP SPRAY SUAVE  20ml) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP SPRAY SUAVE  20ml (ID: 73322817) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73322809 (LAP SPRAY TIEMPO  20ml) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP SPRAY TIEMPO  20ml (ID: 73322809) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73322800 (LAP SPRAY CALIENTE 20ml) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP SPRAY CALIENTE 20ml (ID: 73322800) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73322793 (LAP SPRAY ORIENTAL HUO BING 20ml) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP SPRAY ORIENTAL HUO BING 20ml (ID: 73322793) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 73322766 (A580 Capa Extensora) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto A580 Capa Extensora (ID: 73322766) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 72771547 (ST1170VV  Protese  Maciço Pele Vibro ventosa) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ST1170VV  Protese  Maciço Pele Vibro ventosa (ID: 72771547) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 72643080 (TAILANDESA SEXFIRE) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto TAILANDESA SEXFIRE (ID: 72643080) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 71865906 (PERSONALIZADA LUXO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PERSONALIZADA LUXO (ID: 71865906) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 71716778 (body FBI fantasia) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto body FBI fantasia (ID: 71716778) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 71577462 (HOT BALL PLUS SHOK) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL PLUS SHOK (ID: 71577462) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 71272588 (LAP SHOCK GIN bisnaga Menta Ice 8g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP SHOCK GIN bisnaga Menta Ice 8g (ID: 71272588) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 70888467 (PERFUME SPRAY OUSADA) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PERFUME SPRAY OUSADA (ID: 70888467) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 70703304 (CHIBATA CORAÇÃO CRAVO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CHIBATA CORAÇÃO CRAVO (ID: 70703304) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 70394674 (FACIL LUB 120G SABORES 7899702309923) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto FACIL LUB 120G SABORES 7899702309923 (ID: 70394674) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 70059769 (BODY ROMANTICA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BODY ROMANTICA (ID: 70059769) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 69811726 (CINTA LIGA SAIA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CINTA LIGA SAIA (ID: 69811726) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 69585879 (HOT BALL PLUS ESQUENTA HOT) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL PLUS ESQUENTA HOT (ID: 69585879) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 69398193 (BISNAGA NINFES 8G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BISNAGA NINFES 8G (ID: 69398193) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 69398103 (BISNAGA EXCY PINK 8G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BISNAGA EXCY PINK 8G (ID: 69398103) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 69398019 (BISNAGA HANNY BLUE 8G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BISNAGA HANNY BLUE 8G (ID: 69398019) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 69397929 (BISNAGA PROLONG BLACK 8G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BISNAGA PROLONG BLACK 8G (ID: 69397929) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 69365152 (KARAMELA CALCINHA MENTA TAM G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto KARAMELA CALCINHA MENTA TAM G (ID: 69365152) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 69296769 (CHIBATA CRAVO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CHIBATA CRAVO (ID: 69296769) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 69024093 (FACIL LUB SABORES 60G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto FACIL LUB SABORES 60G (ID: 69024093) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68945655 (CALCINHA BIQUINE) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CALCINHA BIQUINE (ID: 68945655) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68924518 (BODY LAÇO    SFBL01) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BODY LAÇO    SFBL01 (ID: 68924518) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68907383 (CALCINHA BORBOLETA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CALCINHA BORBOLETA (ID: 68907383) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68903388 (vestido strass) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto vestido strass (ID: 68903388) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68690175 (OHH DELICIA AROMA DE MORANGO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto OHH DELICIA AROMA DE MORANGO (ID: 68690175) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68618838 (LAP BISNAGA HUO BING ORIENTAL 8G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP BISNAGA HUO BING ORIENTAL 8G (ID: 68618838) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68618676 (L026 LAP BISNAGA TIEMPO 8G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto L026 LAP BISNAGA TIEMPO 8G (ID: 68618676) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68605074 (SADO TRIO - Coleira, Algema e Tornoz c/ corrente) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SADO TRIO - Coleira, Algema e Tornoz c/ corrente (ID: 68605074) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68565879 (86SQ DADINHO DIVERSIDADE) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto 86SQ DADINHO DIVERSIDADE (ID: 68565879) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68548505 (CALCINHA PERSO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CALCINHA PERSO (ID: 68548505) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68356692 (FACIL LUB MORANGO C CHAMPAGNE) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto FACIL LUB MORANGO C CHAMPAGNE (ID: 68356692) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68113375 (CALCINHA CORACAO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CALCINHA CORACAO (ID: 68113375) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68113047 (CONJUNTO SEDUCAO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CONJUNTO SEDUCAO (ID: 68113047) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68005237 (ACESSORIO PARA MONTAR NOME) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ACESSORIO PARA MONTAR NOME (ID: 68005237) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 68005012 (LETRAS  PERSONALIZADAS DOURADA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LETRAS  PERSONALIZADAS DOURADA (ID: 68005012) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 67766931 (PROTESE FOGO DA PAIXAO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PROTESE FOGO DA PAIXAO (ID: 67766931) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 67701660 (LUBRIFICANTE HO ALGODAO DOCE) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LUBRIFICANTE HO ALGODAO DOCE (ID: 67701660) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 67328405 (Lubrificante Chocolate Premium) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Lubrificante Chocolate Premium (ID: 67328405) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66880695 (L308 Toque Seductor Seco) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto L308 Toque Seductor Seco (ID: 66880695) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66880515 (L307 Toque Seductor Molhado) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto L307 Toque Seductor Molhado (ID: 66880515) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66418018 (BABALOO ICE CEREJA.  Lotes:27541 Qtd.: 10,000,) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BABALOO ICE CEREJA.  Lotes:27541 Qtd.: 10,000, (ID: 66418018) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66418017 (BABALOO ICE UVA SUPER DESLIZANTE UVA.  Lotes:27939 Qtd.: 10,000,) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BABALOO ICE UVA SUPER DESLIZANTE UVA.  Lotes:27939 Qtd.: 10,000, (ID: 66418017) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66418015 (GEL MAMA TETA.  Lotes:28244 Qtd.: 20,000,) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL MAMA TETA.  Lotes:28244 Qtd.: 20,000, (ID: 66418015) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66418014 (GEL XUPA XANA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL XUPA XANA (ID: 66418014) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66418013 (GEL XUPA ROLA.  Lotes:28154 Qtd.: 50,000,) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL XUPA ROLA.  Lotes:28154 Qtd.: 50,000, (ID: 66418013) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66418012 (GLOSS BABALOO CEREJA.  Lotes:28429 Qtd.: 5,000,) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GLOSS BABALOO CEREJA.  Lotes:28429 Qtd.: 5,000, (ID: 66418012) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66418010 (GLOSS BABALOO TUTTI FRUTTI.  Lotes:28618 Qtd.: 5,000,) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GLOSS BABALOO TUTTI FRUTTI.  Lotes:28618 Qtd.: 5,000, (ID: 66418010) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66418009 (GLOSS BABALOO MELANCIA.  Lotes:28431 Qtd.: 5,000,) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GLOSS BABALOO MELANCIA.  Lotes:28431 Qtd.: 5,000, (ID: 66418009) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66153017 (MELZINHO ARABE CHILLES) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto MELZINHO ARABE CHILLES (ID: 66153017) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66135172 (DESODORANTE SPRAY OUSADA) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto DESODORANTE SPRAY OUSADA (ID: 66135172) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 66135170 (CREME HIDRATANTE OUSADA 115G) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CREME HIDRATANTE OUSADA 115G (ID: 66135170) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826662 (LAP LOVE LUB NEUTRO 60g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP LOVE LUB NEUTRO 60g (ID: 65826662) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826661 (LAP LOVE LUB HOT 60G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP LOVE LUB HOT 60G (ID: 65826661) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826659 (LAP LOVE LUB Bubbalove Morango 60g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP LOVE LUB Bubbalove Morango 60g (ID: 65826659) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826658 (LAP LOVE LUB Bubbalove Tutti Frutti 60g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP LOVE LUB Bubbalove Tutti Frutti 60g (ID: 65826658) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826656 (LAP LOVE LUB Bubbalove Menta Ice 60g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP LOVE LUB Bubbalove Menta Ice 60g (ID: 65826656) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826651 (LAP SHOCK-G CHOCOLATE 15g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP SHOCK-G CHOCOLATE 15g (ID: 65826651) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826650 (LAP SHOCK-G CHICLETE 15g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP SHOCK-G CHICLETE 15g (ID: 65826650) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826649 (LAP SHOCK-G ALGODÃO DOCE 15g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP SHOCK-G ALGODÃO DOCE 15g (ID: 65826649) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826640 (LAP EXOTIC BLACK Unisex 20ml) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP EXOTIC BLACK Unisex 20ml (ID: 65826640) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826638 (LAP MISTIC BLACK Unisex 20ml) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP MISTIC BLACK Unisex 20ml (ID: 65826638) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826636 (LAP PALAWAN FEM15ML) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP PALAWAN FEM15ML (ID: 65826636) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826634 (LAP VELA CHICLETE 45G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP VELA CHICLETE 45G (ID: 65826634) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826633 (LAP VELA GELADA 45G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP VELA GELADA 45G (ID: 65826633) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826632 (LAP VELA MORANGO 45G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP VELA MORANGO 45G (ID: 65826632) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826631 (LAP VELA BEIJAVEL ALGODAO DOCE CARAMELO 50g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP VELA BEIJAVEL ALGODAO DOCE CARAMELO 50g (ID: 65826631) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826630 (LAP VELA BEIJAVEL ALGODAO DOCE CHICLETE 50g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP VELA BEIJAVEL ALGODAO DOCE CHICLETE 50g (ID: 65826630) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826629 (LAP VELA BEIJAVEL ALGODAO DOCE MORANGO 50g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP VELA BEIJAVEL ALGODAO DOCE MORANGO 50g (ID: 65826629) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826628 (LAP VELA BEIJAVEL SORVETE MENTA ICE 50g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP VELA BEIJAVEL SORVETE MENTA ICE 50g (ID: 65826628) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826627 (LAP ALGODAO DOCE ABACAXI) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP ALGODAO DOCE ABACAXI (ID: 65826627) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826623 (LAP ALGODAO DOCE MORANGO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP ALGODAO DOCE MORANGO (ID: 65826623) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826618 (LAP SORVETE MENTA ICE 35ml) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP SORVETE MENTA ICE 35ml (ID: 65826618) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65826616 (LAP Baba Lamb Chiclete Hot 30g) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LAP Baba Lamb Chiclete Hot 30g (ID: 65826616) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65539277 (KGEL SEDUCTION MAIS QUENTE COM CANELA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto KGEL SEDUCTION MAIS QUENTE COM CANELA (ID: 65539277) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 65328683 (Dadinho Promoção) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Dadinho Promoção (ID: 65328683) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 64757822 (SENTA.DONA 18G) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SENTA.DONA 18G (ID: 64757822) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 64757813 (CARROSSEL DOCE DE LEITE 18G) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CARROSSEL DOCE DE LEITE 18G (ID: 64757813) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 64601649 (SEDENTA POR ORAL CEREJA ICE 50G) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SEDENTA POR ORAL CEREJA ICE 50G (ID: 64601649) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 64539375 (Blow Girls) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Blow Girls (ID: 64539375) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 64483051 (Calcinha joia Sex Fire) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Calcinha joia Sex Fire (ID: 64483051) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 64482765 (Calcinha Lação Sex Fire) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Calcinha Lação Sex Fire (ID: 64482765) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 64272454 (GLOW GEL DE MASSAGEM CORPORAL UVA 10G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GLOW GEL DE MASSAGEM CORPORAL UVA 10G (ID: 64272454) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 64272325 (GLOW GEL DE MASSAGEM CORPORAL CHICLETE 10G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GLOW GEL DE MASSAGEM CORPORAL CHICLETE 10G (ID: 64272325) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 64272271 (GLOW GEL DE MASSAGEM CORPORAL ALGODÃO DOCE 10G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GLOW GEL DE MASSAGEM CORPORAL ALGODÃO DOCE 10G (ID: 64272271) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 63501541 (PEPPER BALL SEDENTA NIVEL HARD 2 UNID) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto PEPPER BALL SEDENTA NIVEL HARD 2 UNID (ID: 63501541) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 63501520 (MAXX BABALOO MORANGO 20G) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto MAXX BABALOO MORANGO 20G (ID: 63501520) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 63378584 (VIBRE POWER MINT) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto VIBRE POWER MINT (ID: 63378584) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 63261271 (ORAL GOURMET ICE MORANGO 45G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ORAL GOURMET ICE MORANGO 45G (ID: 63261271) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 62399385 (Calcinha Corrente) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Calcinha Corrente (ID: 62399385) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 62289390 (SEDENTA POR SEXO 50G) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SEDENTA POR SEXO 50G (ID: 62289390) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 61659867 (Mini Fantasia) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Mini Fantasia (ID: 61659867) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 61150327 (MBA1425 Cápsula vibratória texturizada recarregável) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto MBA1425 Cápsula vibratória texturizada recarregável (ID: 61150327) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 61026791 (MLPP6082 Plug anal vibratório por aplicativo em silicone com rotação 360°) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto MLPP6082 Plug anal vibratório por aplicativo em silicone com rotação 360° (ID: 61026791) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 60746422 (Cj tule ilusion e renda com aro e sem bojo, calcinha string) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Cj tule ilusion e renda com aro e sem bojo, calcinha string (ID: 60746422) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 60718952 (KGEL 2 em 1 LUBRIFICANTE INTIMO 200G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto KGEL 2 em 1 LUBRIFICANTE INTIMO 200G (ID: 60718952) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 60717221 (SABONETE FEMININO BABALOOB TUTTI FRUTTI) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SABONETE FEMININO BABALOOB TUTTI FRUTTI (ID: 60717221) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 60393421 (Conjunto Victoria - Conjunto rendado, sem bojo, meia taca forrado) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Conjunto Victoria - Conjunto rendado, sem bojo, meia taca forrado (ID: 60393421) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 59606939 (FAISCA NA XAVASCA) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto FAISCA NA XAVASCA (ID: 59606939) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 59606876 (SEDENTA GELADA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SEDENTA GELADA (ID: 59606876) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 59606852 (SEDENTA POR SENSAÇÃO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SEDENTA POR SENSAÇÃO (ID: 59606852) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 59606834 (SEDENTA POR BEIJINHO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SEDENTA POR BEIJINHO (ID: 59606834) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 59606794 (SEDENTA POR CONFORTO) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SEDENTA POR CONFORTO (ID: 59606794) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 59606754 (SEDENTA MOLHADA NEUTRO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SEDENTA MOLHADA NEUTRO (ID: 59606754) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 58478918 (CALCINHA LAÇO FIO SEXFIRE) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CALCINHA LAÇO FIO SEXFIRE (ID: 58478918) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 57911531 (KGEL LUB. INTIMO BISNAGA 80G TRADICIONAL) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto KGEL LUB. INTIMO BISNAGA 80G TRADICIONAL (ID: 57911531) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 57911530 (KGEL LUB. INTIMO BISNAGA 80G - MORANGO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto KGEL LUB. INTIMO BISNAGA 80G - MORANGO (ID: 57911530) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 57911529 (KGEL LUB. INTIMO BISNAGA 80G MENTA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto KGEL LUB. INTIMO BISNAGA 80G MENTA (ID: 57911529) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 56421822 (LBDA01 dadinho de posiçoes sexuais florecente) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LBDA01 dadinho de posiçoes sexuais florecente (ID: 56421822) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 55925837 (MASCARA Vinil tapa olho) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto MASCARA Vinil tapa olho (ID: 55925837) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 55787208 (CHIBATA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CHIBATA (ID: 55787208) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 55185091 (SACHE VOLUMAO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto SACHE VOLUMAO (ID: 55185091) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 55128655 (DIV2 Baralho Kama Sutra Posições (54 cartas)) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto DIV2 Baralho Kama Sutra Posições (54 cartas) (ID: 55128655) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 54733028 (HOT BALL 50 TONS ESCUROS) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL 50 TONS ESCUROS (ID: 54733028) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 54616074 (HOT BALL 50 TONS CINZA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL 50 TONS CINZA (ID: 54616074) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 54616073 (HOT BALL PLUS ESFRIA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL PLUS ESFRIA (ID: 54616073) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 54616072 (KARAMELA CALCINHA MOR CHAMP TAM G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto KARAMELA CALCINHA MOR CHAMP TAM G (ID: 54616072) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 54616071 (KARAMELA CALCINHA MENTA TAM G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto KARAMELA CALCINHA MENTA TAM G (ID: 54616071) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 54616070 (KARAMELA CALCINHA CHOCOLATE TAM U) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto KARAMELA CALCINHA CHOCOLATE TAM U (ID: 54616070) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 54362637 (MNA2011 -B Kit Anel peniano) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto MNA2011 -B Kit Anel peniano (ID: 54362637) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 54362016 (MVM1219 Mini massageador varinhamágica com toque aveludado) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto MVM1219 Mini massageador varinhamágica com toque aveludado (ID: 54362016) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 52490205 (MLVE4020  Vibrador ponto G com estim ulador clitoriano - Recarreg ável) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto MLVE4020  Vibrador ponto G com estim ulador clitoriano - Recarreg ável (ID: 52490205) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 52061408 (MPA1308 PLUG ANAL JOIA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto MPA1308 PLUG ANAL JOIA (ID: 52061408) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 50493350 (CALCINHA TAILANDESA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CALCINHA TAILANDESA (ID: 50493350) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 48673936 (BODY THEMIS) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BODY THEMIS (ID: 48673936) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 48517633 (Massageador varinha mági ca com aquecimento) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Massageador varinha mági ca com aquecimento (ID: 48517633) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 48516973 (MBA1016-G Cápsula vibratória formato golfinho) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto MBA1016-G Cápsula vibratória formato golfinho (ID: 48516973) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 47433753 (Egg Masturbador Masculino) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Egg Masturbador Masculino (ID: 47433753) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 44628626 (Calcinha Frase Strass Sex Fire) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Calcinha Frase Strass Sex Fire (ID: 44628626) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 41337946 (CALDEIRAO DA VIBRACAO) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CALDEIRAO DA VIBRACAO (ID: 41337946) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 41186856 (lingerie comestivel morango c champanhe) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto lingerie comestivel morango c champanhe (ID: 41186856) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822993 (GEL UMECT CORP PINTO LOKO 15G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL UMECT CORP PINTO LOKO 15G (ID: 40822993) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822987 (GEL UMECT CORP KULOKO 15G) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL UMECT CORP KULOKO 15G (ID: 40822987) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822980 (BISNAGA - GEL ACEITA QUE DOI MENOS) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto BISNAGA - GEL ACEITA QUE DOI MENOS (ID: 40822980) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822979 (GEL UMECT CORP HORAS BOLAS 15G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL UMECT CORP HORAS BOLAS 15G (ID: 40822979) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822958 (GEL UMECT CORP BERINJELO 15G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL UMECT CORP BERINJELO 15G (ID: 40822958) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822955 (GEL UMECT CORP TREPADEIRA 15G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL UMECT CORP TREPADEIRA 15G (ID: 40822955) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822953 (GEL UMECT CORP COMIGO NINGUEM) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL UMECT CORP COMIGO NINGUEM (ID: 40822953) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822947 (GEL UMECT CORP XANA LOKA 15G) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL UMECT CORP XANA LOKA 15G (ID: 40822947) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822766 (HOT BALL PLUS ESQUENTA ESFRIA) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL PLUS ESQUENTA ESFRIA (ID: 40822766) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822762 (HOT BALL MENTA LUBRIFICANTE INTIMO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL MENTA LUBRIFICANTE INTIMO (ID: 40822762) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822761 (HOT BALL UVA LUBRIFICANTE INTIMO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL UVA LUBRIFICANTE INTIMO (ID: 40822761) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822760 (HOT BALL MORANGO LUBRIFICANTE) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL MORANGO LUBRIFICANTE (ID: 40822760) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822755 (CREME CONFORTO 3,5G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CREME CONFORTO 3,5G (ID: 40822755) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822753 (GEL CORPORAL VOLUMAO 25G) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL CORPORAL VOLUMAO 25G (ID: 40822753) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822749 (GEL HIDRATANTE CORPORAL LIS IN 30G) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL HIDRATANTE CORPORAL LIS IN 30G (ID: 40822749) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822746 (AROMAT BUCAL MAIS PROFUNDA 12ML) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto AROMAT BUCAL MAIS PROFUNDA 12ML (ID: 40822746) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822736 (GEL LUBRIF. INTIMO SETE SENSACOES 25G) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto GEL LUBRIF. INTIMO SETE SENSACOES 25G (ID: 40822736) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822384 (ADSTR LIQ SEMPRE VIRGEM HAMAMELIS) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ADSTR LIQ SEMPRE VIRGEM HAMAMELIS (ID: 40822384) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822375 (AROMAT BUCAL POWER BLACK ICE SPRAY) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto AROMAT BUCAL POWER BLACK ICE SPRAY (ID: 40822375) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822364 (LOCAO GEL ADSTR SEMPRE VIRGEM 25G) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto LOCAO GEL ADSTR SEMPRE VIRGEM 25G (ID: 40822364) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822339 (DEO COLONIA HF FEMME PHER 30ML) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto DEO COLONIA HF FEMME PHER 30ML (ID: 40822339) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822131 (DEO COLONIA HF HOMME PHER 30ML) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto DEO COLONIA HF HOMME PHER 30ML (ID: 40822131) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822130 (CREME DE MASSAGEM ORIENTAL 4G) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CREME DE MASSAGEM ORIENTAL 4G (ID: 40822130) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822129 (HOT BALL TERMO SHOCK) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL TERMO SHOCK (ID: 40822129) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822128 (HOT BALL ESFERA CHINESA) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL ESFERA CHINESA (ID: 40822128) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822126 (HOT BALL BJ MUITO POWER BLACK) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL BJ MUITO POWER BLACK (ID: 40822126) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40822125 (HOT BALL ESFERAS DO DRAGAO) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto HOT BALL ESFERAS DO DRAGAO (ID: 40822125) não pode ser sincronizado. Campos faltando: código interno (SKU)
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40740220 (Vibrador Golfinho Single) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto Vibrador Golfinho Single (ID: 40740220) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40626367 (CONJUNTO PROMOÇAO) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CONJUNTO PROMOÇAO (ID: 40626367) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40519768 (VIBRE CHICLETE GEL DE MASSAGEM ELETRIZANTE 15G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto VIBRE CHICLETE GEL DE MASSAGEM ELETRIZANTE 15G (ID: 40519768) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40519764 (ORAL GOURMET VINHO C/ LEITE CONDENSADO GEL 35ML) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ORAL GOURMET VINHO C/ LEITE CONDENSADO GEL 35ML (ID: 40519764) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40519762 (ORAL GOURMET DRINKS ICE REDWHISKEY 45G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ORAL GOURMET DRINKS ICE REDWHISKEY 45G (ID: 40519762) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40519761 (ORAL GOURMET DRINKS ICE CAIPISEXY) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ORAL GOURMET DRINKS ICE CAIPISEXY (ID: 40519761) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40519757 (ORAL GOURMET CHICLETE GEL 35ML) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ORAL GOURMET CHICLETE GEL 35ML (ID: 40519757) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40519755 (ORAL GOURMET ALGODAO DOCE GEL 35ML) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ORAL GOURMET ALGODAO DOCE GEL 35ML (ID: 40519755) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 40519754 (FELIZ IDADE GEL 75 G) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto FELIZ IDADE GEL 75 G (ID: 40519754) não pode ser sincronizado. Campos faltando: código interno (SKU), descrição, peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 39797898 (ON RETARDANTE) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto ON RETARDANTE (ID: 39797898) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | ProductConverter | ❌ Produto ID: 39797886 (CAPSULA SUPER MACHO) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+⚠️ 18:19:12 | BidirectionalSynchronizer | ❌ Produto CAPSULA SUPER MACHO (ID: 39797886) não pode ser sincronizado. Campos faltando: código interno (SKU), peso, altura, largura, profundidade
+✅ 18:19:12 | BidirectionalSynchronizer | ✨ Sincronização de produtos para Bagy concluída: 0 com sucesso, 219 erros
+✅ 18:19:12 | BidirectionalSynchronizer | 👥 Iniciando sincronização de clientes do Bagy para GestãoClick...
+✅ 18:19:12 | BidirectionalSynchronizer | 🔄 Iniciando sincronização de clientes do Bagy para GestãoClick
+✅ 18:19:12 | BagyClient | Fetching customers from Bagy (page 1, limit 100)
+✅ 18:19:13 | BagyClient | Fetching customers from Bagy (page 2, limit 100)
+✅ 18:19:13 | Pagination | GestãoClick API retornou array vazio em 'data' na página 2, finalizando paginação
+✅ 18:19:13 | Pagination | Recuperado um total de 2 itens de 2 páginas
+✅ 18:19:13 | BidirectionalSynchronizer | 👥 Encontrados 2 clientes no Bagy
+✅ 18:19:13 | GestaoClickClient | Searching for customer with email: Testedodev@gmailc.om
+✅ 18:19:14 | BidirectionalSynchronizer | Found existing customer with email Testedodev@gmailc.om (GestãoClick ID: 44172876)
+✅ 18:19:14 | GestaoClickClient | Updating customer with ID: 44172876
+❌ 18:19:14 | GestaoClickClient | Response error 400: {"code":400,"status":"error","data":{"erro":"Bad Request","mensagem":"Campo tipo_pessoa inv\u00e1lido!"}}
+⚠️ 18:19:14 | GestaoClickClient | Request failed: 400 Client Error: Bad Request for url: https://api.beteltecnologia.com/clientes/44172876
+✅ 18:19:14 | GestaoClickClient | Retrying in 30 seconds...
+❌ 18:19:44 | GestaoClickClient | Response error 400: {"code":400,"status":"error","data":{"erro":"Bad Request","mensagem":"Campo tipo_pessoa inv\u00e1lido!"}}
+⚠️ 18:19:44 | GestaoClickClient | Request failed: 400 Client Error: Bad Request for url: https://api.beteltecnologia.com/clientes/44172876
+✅ 18:19:44 | GestaoClickClient | Retrying in 60 seconds...
+❌ 18:20:45 | GestaoClickClient | Response error 400: {"code":400,"status":"error","data":{"erro":"Bad Request","mensagem":"Campo tipo_pessoa inv\u00e1lido!"}}
+⚠️ 18:20:45 | GestaoClickClient | Request failed: 400 Client Error: Bad Request for url: https://api.beteltecnologia.com/clientes/44172876
+✅ 18:20:45 | GestaoClickClient | Retrying in 120 seconds...
