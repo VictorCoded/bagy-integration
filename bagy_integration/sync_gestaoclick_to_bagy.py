@@ -1,4 +1,3 @@
-
 import json
 import requests
 import time
@@ -13,7 +12,7 @@ class BagyClient:
     def __init__(self):
         self.logger = DummyLogger()
         self.base_url = "https://api.dooca.store/"
-        self.api_key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaG9wX2lkIjoxNjY2OTMsInR5cGUiOiJhcGkiLCJlbWFpbCI6IjUwMTEwOTYzODY4OTMwNzgwMDAwLmJhZ3lAYXBpLmNvbS5iciIsImZpcnN0X25hbWUiOiJBUEkgQmFneSBTZXggRmlyZSIsImFjdGl2ZSI6dHJ1ZSwiaWF0IjoxNzQxODAxNjU5fQ.FnoqxouQZ9iq3S05tx_wGWURZ916xDxFMDjKGEJLV48"
+        self.api_key = "SEU_TOKEN_AQUI"  # Coloque seu token real aqui
 
     def _make_request(self, method, endpoint, json_data=None, retries=3):
         url = f"{self.base_url}{endpoint}"
@@ -69,7 +68,8 @@ def converter_para_bagy(produto):
             imagens.append({"src": url.strip()})
 
     if not imagens:
-        imagens = [{"src": "https://upload-arquivos.s3.sa-east-1.amazonaws.com/img/produtos_fotos/imagem-padrao.png"}]
+        print(f"[AVISO] Produto '{produto.get('nome')}' está sem imagens válidas.")
+        imagens = [{"src": "https://upload-arquivos.s3-sa-east-1.amazonaws.com/img/produtos_fotos/imagem-padrao.png"}]
 
     if produto.get("possui_variacao") == "1":
         tipo_variacao = produto.get("variacoes", [{}])[0].get("nome") or "Tamanho"
@@ -89,7 +89,7 @@ def converter_para_bagy(produto):
                 "attributes": {tipo_variacao: nome_var},
                 "reference": str(produto.get("codigo_interno") or ""),
                 "sku": str(valor.get("codigo_barra") or f"SKU{produto.get('id')}-{nome_var}"),
-                "images": imagens if imagens else [{"src": "https://upload-arquivos.s3-sa-east-1.amazonaws.com/img/produtos_fotos/imagem-padrao.png"}]
+                "images": imagens
             })
 
         return {
@@ -101,7 +101,7 @@ def converter_para_bagy(produto):
             "sku": str(produto.get("codigo_barra") or f"SKU{produto.get('id')}"),
             "active": produto.get("ativo") == "1",
             "variations": variacoes,
-            "images": imagens if imagens else [{"src": "https://upload-arquivos.s3-sa-east-1.amazonaws.com/img/produtos_fotos/imagem-padrao.png"}]
+            "images": imagens
         }
 
     return {
@@ -119,11 +119,7 @@ def converter_para_bagy(produto):
         "height": safe_float(produto.get("altura")),
         "depth": safe_float(produto.get("comprimento")),
         "active": produto.get("ativo") == "1",
-        "images": imagens if imagens else [{"src": "https://upload-arquivos.s3-sa-east-1.amazonaws.com/img/produtos_fotos/imagem-padrao.png"}]
-
-        if not imagens:
-    print(f"[AVISO] Produto '{produto.get('nome')}' está sem imagens válidas.")
-
+        "images": imagens
     }
 
 def excluir_todos_os_produtos(cliente_bagy):
