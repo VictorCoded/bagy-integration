@@ -1,0 +1,24 @@
+name: Sincronizar ERP com Bagy
+
+on:
+  workflow_dispatch:  # Permite rodar manualmente
+  schedule:
+    - cron: '*/5 * * * *'  # Executa a cada 5 minutos (horário UTC)
+
+jobs:
+  sync-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v3
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar sincronização
+        run: node sync_gestaoclick_to_bagy.js
