@@ -12,7 +12,7 @@ class BagyClient:
     def __init__(self):
         self.logger = DummyLogger()
         self.base_url = "https://api.dooca.store/"
-        self.api_key = "SEU_TOKEN_AQUI"  # Coloque seu token real aqui
+        self.api_key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaG9wX2lkIjoxNjY2OTMsInR5cGUiOiJhcGkiLCJlbWFpbCI6IjUwMTEwOTYzODY4OTMwNzgwMDAwLmJhZ3lAYXBpLmNvbS5iciIsImZpcnN0X25hbWUiOiJBUEkgQmFneSBTZXggRmlyZSIsImFjdGl2ZSI6dHJ1ZSwiaWF0IjoxNzQxODAxNjU5fQ.FnoqxouQZ9iq3S05tx_wGWURZ916xDxFMDjKGEJLV48"  # Coloque seu token real aqui
 
     def _make_request(self, method, endpoint, json_data=None, retries=3):
         url = f"{self.base_url}{endpoint}"
@@ -52,7 +52,7 @@ class BagyClient:
         return self._make_request("POST", "products", json_data=product_data)
 
 def carregar_produtos_do_gestaoclick():
-    with open('data/produtos.json', 'r', encoding='utf-8') as f:
+    with open('bagy_integration/data/produtos.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def converter_para_bagy(produto):
